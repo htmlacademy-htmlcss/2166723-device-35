@@ -49,7 +49,74 @@
         </ul>
     </nav>
     </header>
-
+<main class="main-inner">
+  <header class="inner-header">
+  <h1 class="inner-header-title">Моноподы для селфи</h1>
+  <ul class="breadcrumbs-list">
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="index.html">Главная</a>
+    </li>
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+    </li>
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link">Моноподы для селфи</a>
+    </li>
+  </ul>
+  </header>
+  <section class="catalog-products">
+    <h2 class="catalog-products-title">Фильтр:</h2>
+    <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+<!--Здесь должен быть блок со стоимостью-->
+<fieldset class="catalog-filter-color">
+<legend class="catalog-filter-title">Цвет</legend>
+<ul class="catalog-filter-list">
+  <li class="catalog-filter-item">
+<label class="control">
+<input class="control-input" type="checkbox" name="filter-color-black" checked>Черный
+</label>
+  </li>
+  <li class="catalog-filter-item">
+<label class="control">
+  <input class="control-input" type="checkbox" name="filter-color-white" checked>Белый
+  </label>
+</li>
+  <li class="catalog-filter-item">
+  <label class="control">
+    <input class="control-input" type="checkbox" name="filter-color-blue">Синий
+    </label>
+    </li>
+    <li class="catalog-filter-item">
+    <label class="control">
+      <input class="control-input" type="checkbox" name="filter-color-red">Красный
+      </label>
+    </li>
+    <li class="catalog-filter-item">
+      <label class="control">
+        <input class="control-input" type="checkbox" name="filter-color-pink">Розовый
+        </label>
+    </li>
+        </ul>
+</fieldset>
+<fieldset class="catalog-filter-color">
+  <legend class="catalog-filter-title">Bluetooth</legend>
+  <ul class="catalog-filter-list">
+    <li class="catalog-filter-item">
+  <label class="control">
+  <input class="control-input" type="radio" name="bluetooth" value="available" checked>Есть
+  </label>
+    </li>
+    <li class="catalog-filter-item">
+  <label class="control">
+    <input class="control-input" type="radio" name="bluetooth" value="not">Нет
+    </label>
+  </li>
+  </ul>
+</fieldset>
+  <button class="button" type="submit">Показать</button>
+    </form>
+  </section>
+</main>
     <footer class="page-footer">
       <section class="footer-address">
       <img class="footer-logo" src="#" alt="Логотип интернет-магазина Девайс.">
