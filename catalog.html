@@ -10,46 +10,54 @@
     <header class="page-header">
       <nav class="navigation-header">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип интернет-магазина Девайс." src="#">
+          <img class="page-header-logo" alt="Логотип интернет-магазина Девайс." src="images/logo-header.svg">
         </a>
-        <form action="https://echo.htmlacademy.ru/">
-          <input class="site-search" type="text" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>
-        </form>
-        <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <img class="user-icon" src="#" alt="Значок пользователя.">
-            <a class="navigation-user-link" href="#">Коля Петухов</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Выйти</a>
-          </li>
-        </ul>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <img class="diagram-icon" src="#" alt="Диаграмма.">
-            <a class="navigation-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <img class="basket-icon" src="#" alt="Корзина.">
-            <a class="navigation-link" href="#">Корзина</a>
-          </li>
-        </ul>
-        <p>
-          <a class="navigation-catalog" href="catalog.html">Каталог товаров</a>
-          <button type="button" class="navigation-catalog">+</button>
-        </p>
-        <ul class="navigation-list controls">
-          <li class="navigation-item controls">
-            <a class="navigation-link controls" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item controls">
-            <a class="navigation-link controls" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item controls">
-            <a class="navigation-link controls" href="#">Контакты</a>
-          </li>
-        </ul>
+        <div class="search">
+          <form action="https://echo.htmlacademy.ru/">
+            <input class="site-search" type="text" placeholder="Поиск по сайту">
+            <button type="submit">Найти</button>
+          </form>
+        </div>
+        <div class="user-panel">
+          <ul class="user-panel-list">
+            <li class="user-panel-item">
+              <img class="user-icon" src="images/user.svg" alt="Значок пользователя.">
+              <a class="user-panel-link" href="#">Коля Петухов</a>
+            </li>
+            <li class="user-panel-item">
+              <a class="user-panel-link" href="#">Выйти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="controls">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <img class="diagram-icon" src="images/comparison.svg" alt="Диаграмма.">
+              <a class="navigation-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-item">
+              <img class="basket-icon" src="images/basket.svg" alt="Корзина.">
+              <a class="navigation-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navigation-catalog-products">
+          <a class="catalog-prodects-link" href="catalog.html">Каталог товаров</a>
+          <button type="button" class="catalog-prodects-button">+</button>
+        </div>
+        <div class="navigation-services">
+          <ul class="navigation-services-list">
+            <li class="navigation-services-item">
+              <a class="navigation-services-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-services-item">
+              <a class="navigation-services-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-services-item">
+              <a class="navigation-services-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main-inner">
