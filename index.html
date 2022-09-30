@@ -8,12 +8,12 @@
 
   <body>
     <header class="page-header">
-      <nav class="navigation-header">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип интернет-магазина Девайс." src="images/logo-header.svg">
-        </a>
-        <div class="search">
-          <form action="https://echo.htmlacademy.ru/">
+      <a class="logo-header" href="index.html">
+        <img class="page-logo-header" alt="Логотип интернет-магазина Девайс." src="images/logo-header.svg">
+      </a>
+      <section class="user-functionality">
+        <div class="search-products">
+          <form class="search-products-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="site-search" type="text" placeholder="Поиск по сайту">
             <button type="submit">Найти</button>
           </form>
@@ -34,24 +34,45 @@
             </li>
           </ul>
         </div>
-        <div class="navigation-catalog-products">
-          <a class="catalog-prodects-link" href="catalog.html">Каталог товаров</a>
-          <button type="button" class="catalog-prodects-button">+</button>
+      </section>
+      <nav class="navigation-services">
+        <div class="catalog-products-button">
+          <a class="catalog-products-link" href="catalog.html">Каталог товаров</a>
+          <button type="button" class="catalog-products-button">+</button>
         </div>
-        <div class="navigation-services">
-          <ul class="navigation-services-list">
-            <li class="navigation-services-item">
-              <a class="navigation-services-link" href="#">Доставка</a>
+        <ul class="navigation-services-list">
+          <li class="navigation-services-item">
+            <a class="navigation-services-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-services-item">
+            <a class="navigation-services-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-services-item">
+            <a class="navigation-services-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <nav class="navigation-catalog-products">
+          <ul class="navigation-catalog-products-list">
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Виртуальная реальность</a>
             </li>
-            <li class="navigation-services-item">
-              <a class="navigation-services-link" href="#">Гарантия</a>
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Моноподы для cелфи</a>
             </li>
-            <li class="navigation-services-item">
-              <a class="navigation-services-link" href="#">Контакты</a>
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Умные часы</a>
+            </li>
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
@@ -222,7 +243,7 @@
         <h2 class="subscription-header">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками,
           а также акции, спецпредложения и вот это вот всё.</p>
-        <form class="subcription-form" action="https://echo.htmlacademy.ru/">
+        <form class="subcription-form" action="https://echo.htmlacademy.ru/" method="get">
           <input class="subscription-email" type="email" placeholder="Ваш e-mail">
           <button type="submit">Подписаться</button>
           <img class="check-mark" src="#" alt="Галочка">

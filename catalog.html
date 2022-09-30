@@ -8,26 +8,20 @@
 
   <body>
     <header class="page-header">
-      <nav class="navigation-header">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип интернет-магазина Девайс." src="images/logo-header.svg">
-        </a>
-        <div class="search">
-          <form action="https://echo.htmlacademy.ru/">
+      <a class="logo-header" href="index.html">
+        <img class="page-logo-header" alt="Логотип интернет-магазина Девайс." src="images/logo-header.svg">
+      </a>
+      <section class="user-functionality">
+        <div class="search-products">
+          <form class="search-products-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="site-search" type="text" placeholder="Поиск по сайту">
             <button type="submit">Найти</button>
           </form>
         </div>
         <div class="user-panel">
-          <ul class="user-panel-list">
-            <li class="user-panel-item">
-              <img class="user-icon" src="images/user.svg" alt="Значок пользователя.">
-              <a class="user-panel-link" href="#">Коля Петухов</a>
-            </li>
-            <li class="user-panel-item">
-              <a class="user-panel-link" href="#">Выйти</a>
-            </li>
-          </ul>
+          <img class="user-icon" src="images/user.svg" alt="Значок пользователя.">
+          <a class="user-panel-link" href="#">Коля Петухов</a>
+          <a class="user-panel-link" href="#">Выйти</a>
         </div>
         <div class="controls">
           <ul class="navigation-list">
@@ -41,24 +35,45 @@
             </li>
           </ul>
         </div>
-        <div class="navigation-catalog-products">
-          <a class="catalog-prodects-link" href="catalog.html">Каталог товаров</a>
-          <button type="button" class="catalog-prodects-button">+</button>
+      </section>
+      <nav class="navigation-services">
+        <div class="catalog-products-button">
+          <a class="catalog-products-link" href="catalog.html">Каталог товаров</a>
+          <button type="button" class="catalog-products-button">+</button>
         </div>
-        <div class="navigation-services">
-          <ul class="navigation-services-list">
-            <li class="navigation-services-item">
-              <a class="navigation-services-link" href="#">Доставка</a>
+        <ul class="navigation-services-list">
+          <li class="navigation-services-item">
+            <a class="navigation-services-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-services-item">
+            <a class="navigation-services-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-services-item">
+            <a class="navigation-services-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <nav class="navigation-catalog-products">
+          <ul class="navigation-catalog-products-list">
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Виртуальная реальность</a>
             </li>
-            <li class="navigation-services-item">
-              <a class="navigation-services-link" href="#">Гарантия</a>
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Моноподы для cелфи</a>
             </li>
-            <li class="navigation-services-item">
-              <a class="navigation-services-link" href="#">Контакты</a>
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Умные часы</a>
+            </li>
+            <li class="navigation-catalog-products-item">
+              <a class="navigation-catalog-products-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
     </header>
     <main class="main-inner">
       <header class="inner-header">
@@ -143,7 +158,8 @@
         <ul class="products-cards-list">
           <li class="product-card-item">
             <div class="product-card-cover">
-              <img class="products-card-image" src="images/catalog-products/amateur-selfie-stick.jpg" alt="Любительская селфи-палка.">
+              <img class="products-card-image" src="images/catalog-products/amateur-selfie-stick.jpg"
+                alt="Любительская селфи-палка.">
               <a class="products-cards-link" href="#">Подробнее</a>
               <span>New</span>
             </div>
@@ -154,7 +170,8 @@
           </li>
           <li class="product-card-item">
             <div class="product-card-cover">
-              <img class="products-card-image" src="images/catalog-products/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка.">
+              <img class="products-card-image" src="images/catalog-products/professional-selfie-stick.jpg"
+                alt="Профессиональная селфи-палка.">
               <a class="products-cards-link" href="#">Подробнее</a>
               <span>New</span>
             </div>
@@ -165,7 +182,8 @@
           </li>
           <li class="product-card-item">
             <div class="product-card-cover">
-              <img class="products-card-image" src="images/catalog-products/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка.">
+              <img class="products-card-image" src="images/catalog-products/unsinkable-selfie-stick.jpg"
+                alt="Непотопляемая селфи-палка.">
               <a class="products-cards-link" href="#">Подробнее</a>
               <span>New</span>
             </div>
@@ -176,7 +194,8 @@
           </li>
           <li class="product-card-item">
             <div class="product-card-cover">
-              <img class="products-card-image" src="images/catalog-products/selfie-stick-follow-me.jpg" alt="Селфи-палка «Следуй за мной».">
+              <img class="products-card-image" src="images/catalog-products/selfie-stick-follow-me.jpg"
+                alt="Селфи-палка «Следуй за мной».">
               <a class="products-cards-link" href="#">Подробнее</a>
               <span>New</span>
             </div>
