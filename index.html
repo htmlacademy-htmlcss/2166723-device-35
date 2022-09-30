@@ -226,7 +226,9 @@
       </section>
       <section class="delivery-products">
         <h2 class="visually-hidden">Доставка</h2>
-        <img class="delivery-transport" src="images/truck-icon.svg" alt="Транспорт доставки.">
+        <div class="delivery-products-image">
+          <img class="delivery-transport" src="images/truck-icon.svg" alt="Транспорт доставки.">
+        </div>
         <a class="navigation-delivery-products" href="#">Доставим редкий товар под заказ</a>
         <a class="navigation-delivery-info" href="#">
           <img class="delivery-info-image" alt="Кнопка информации." src="images/info.svg"></a>
@@ -262,12 +264,13 @@
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
           <h3 class="working-hours">Время работы</h3>
-          <p class="contacts-text">пн—пт: с 10:00 до 22:00
-            <br>сб—вс: с 10:00 до 19:00
-          </p>
+          <ul class="working-hours-list">
+            <li class="working-hours-item">пн—пт: с 10:00 до 22:00</li>
+            <li class="working-hours-item">сб—вс: с 10:00 до 19:00</li>
+          </ul>
           <a class="contact-store" href="#">Напишите нам</a>
-        </div>
-      </section>
+          </div>
+          </section>
       <section class="subscription">
         <h2 class="subscription-header">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками,
@@ -275,9 +278,9 @@
         <form class="subcription-form" action="https://echo.htmlacademy.ru/" method="get">
           <input class="subscription-email" type="email" placeholder="Ваш e-mail">
           <button type="submit">Подписаться</button>
-          <img class="check-mark" src="#" alt="Галочка">
-          <span class="free">Это бесплатно</span>
         </form>
+        <img class="check-mark" src="images/check-mark.svg" alt="Галочка">
+        <span class="free">Это бесплатно</span>
       </section>
     </main>
     <footer class="page-footer">
