@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts\raleway\raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts\rubik\rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts\rubik\rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-header {
+  background-color: #FFE17F;
+}
+
+.search-button,
+.site-search {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.user-panel-link,
+.controls-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-services-link,
+.catalog-products-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21.13px;
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-catalog-products-link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-slogan {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.main-characteristic-product {
+  color: #444444;
+}
+
+.detailed-characteristic-product {
+  font-family: "Raleway";
+  color: #000000;
+  background-color: #FFE17F;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.characteristic-product-item {
+  font-size: 16px;
+  color: #444444;
+}
+
+.characteristic-product-item b {
+  font-size: 36px;
+  color: #000000;
+}
