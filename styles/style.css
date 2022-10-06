@@ -394,3 +394,38 @@ body {
   text-decoration: none;
   text-align: center;
 }
+
+.user-panel {
+  background-image: url(../images/user.svg);
+  background-repeat: no-repeat;
+}
+
+.comparison {
+  background-image: url(../images/comparison.svg);
+  background-repeat: no-repeat;
+}
+
+.basket {
+  background-image: url(../images/basket.svg);
+  background-repeat: no-repeat;
+}
+
+.courier {
+  background-image: url(../images/courier.svg);
+  background-repeat: no-repeat;
+}
+
+.guarantee {
+  background-image: url(../images/guarantee.svg);
+  background-repeat: no-repeat;
+}
+
+.credit {
+  background-image: url(../images/credit.svg);
+  background-repeat: no-repeat;
+}
+
+.free {
+  background-image: url(../images/check-mark.svg);
+  background-repeat: no-repeat;
+}
