@@ -74,7 +74,7 @@ body {
 }
 
 .product-slogan {
-  font-family: "Raleway";
+  font-family: "Raleway, sans-serif";
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -85,7 +85,7 @@ body {
 }
 
 .detailed-characteristic-product {
-  font-family: "Raleway";
+  font-family: "Raleway, sans-serif";
   color: #000000;
   background-color: #FFE17F;
   font-weight: 800;
@@ -104,4 +104,158 @@ body {
 .characteristic-product-item b {
   font-size: 36px;
   color: #000000;
+}
+
+.product-categories-link {
+  font-family: "Raleway, sans-serif";
+  color: #000000;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.product-categories-image {
+  background-color: #FFE17F;
+  Width: 160px;
+  Height: 160px;
+}
+
+.slide-switching-quadcopter .slide-one,
+.slide-switching-smart-watch .slide-two,
+.slide-switching-selfie-stick .slide-three {
+  background-color: #000000;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.slide-switching-quadcopter .slide-two,
+.slide-switching-quadcopter .slide-three,
+.slide-switching-smart-watch .slide-one,
+.slide-switching-smart-watch .slide-three,
+.slide-switching-selfie-stick .slide-one,
+.slide-switching-selfie-stick .slide-two {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.services-link {
+  font-family: "Raleway, sans-serif";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFE17F;
+}
+
+.services-title {
+  font-family: "Raleway, sans-serif";
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.delivery-products {
+  background-color: #F0F0F0;
+}
+
+.navigation-delivery-products {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.delivery-products-image {
+  background-color: #FFE17F;
+  width: 125px;
+  height: 100px;
+}
+
+.contacts-header,
+.subscription-header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.transport-companies-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.store-information,
+.contact-store {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFE17F;
+}
+
+.address-header,
+.working-hours {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-text,
+.contacts-phone,
+.working-hours-item {
+  color: #444444;
+  font-style: normal;
+}
+
+.subscription {
+  background-color: #F0F0F0;
+}
+
+.subscription-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-footer{
+  background-color: #444444;
+}
+
+.footer-address-text,
+.footer-contacts-phone {
+  font-size: 16px;
+line-height: 20px;
+text-decoration: none;
+color:#ffffff;
+}
+
+.footer-navigation-link{
+  font-family: "Raleway", sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+text-transform: uppercase;
+text-decoration: none;
+color:#ffffff;
 }
