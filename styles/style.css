@@ -151,7 +151,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -169,7 +168,7 @@ body {
 .delivery-products {
   background-color: #f0f0f0;
   width: 1160px;
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -280,10 +279,7 @@ body {
   color: #000000;
 }
 
-.catalog-products-filter-title,
 .catalog-sorting-title,
-.show-more-products,
-.filter-button,
 .pagination-prev,
 .pagination-next {
   font-family: "Raleway", sans-serif;
@@ -311,9 +307,9 @@ body {
   border: none;
 }
 
-.catalog-products-filter,
-.catalog-sorting {
+.catalog-products-filter {
   background-color: #f0f0f0;
+  width: 320px;
 }
 
 .select-control {
@@ -374,6 +370,8 @@ body {
 
 .pagination {
   background-color: #ebebeb;
+  width: 760px;
+  margin: 0 auto;
 }
 
 .pagination-prev {
@@ -487,6 +485,8 @@ html {
 }
 
 .navigation-services-list {
+  display: flex;
+  justify-content: space-between;
   width: 471px;
   margin-left: 276px;
 }
@@ -549,6 +549,7 @@ html {
 
 .services-item {
   width: 160px;
+  text-align: center;
 }
 
 .activated-service-item {
@@ -565,27 +566,27 @@ html {
   width: 452px;
 }
 
-.delivery-info-image{
+.delivery-info-image {
   display: block;
   margin: 0 auto;
 }
 
-.navigation-delivery-info{
+.navigation-delivery-info {
   width: 125px;
 }
 
-.delivery-transport{
+.delivery-transport {
   display: block;
   margin: 0 auto;
 }
 
-.store-data{
+.store-data {
   width: 1160px;
   margin: 0 auto;
   display: flex;
 }
 
-.information-store{
+.information-store {
   width: 520p;
   margin-left: 0;
 }
@@ -595,7 +596,7 @@ html {
   margin-left: 108px;
 }
 
-.subscription{
+.subscription {
   flex-wrap: wrap;
   display: flex;
   width: 100%;
@@ -618,32 +619,127 @@ html {
   margin-left: 141px;
 }
 
-.footer-address{
+.footer-address {
   width: 239px;
   margin-left: 140px;
 }
 
-.footer-navigation{
+.footer-navigation {
   width: 444px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.footer-navigation-list{
+.footer-navigation-list {
   width: 444px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 }
 
-.footer-contacts-list{
+.footer-contacts-list {
   display: flex;
   width: 150px;
   justify-content: space-between;
   margin: 0 auto;
 }
 
-.footer-phone{
+.footer-phone {
   width: 185px;
   margin-right: 140px;
+}
+
+.inner-header {
+  width: 1079;
+  margin-left: 200px;
+  margin-right: 161px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+  margin-left: 0;
+}
+
+.catalog-products-menu {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.catalog-products-cards {
+  width: 840px;
+  margin-left: 0;
+}
+
+.catalog-sorting {
+  background-color: #f0f0f0;
+  display: flex;
+  width: 840px;
+  justify-content: space-between;
+}
+
+.catalog-products-filter-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 270px;
+  margin-left: 60px;
+}
+
+.catalog-filter-color {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.catalog-filter-bluetooth {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.filter-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 220px;
+  margin-left: 60px;
+  margin-right: 40px;
+}
+
+.products-cards {
+  width: 840px;
+}
+
+.products-cards-list {
+  width: 760px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-card-item {
+  width: 360px;
+  list-style-type: none;
+}
+
+.show-more-products-link{
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.show-more-products{
+  width: 760px;
+  margin: 0 auto;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: space-evenly;
 }
