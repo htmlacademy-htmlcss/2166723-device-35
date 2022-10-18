@@ -281,6 +281,8 @@ body {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs-link {
@@ -362,6 +364,7 @@ body {
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+  width: 226px;
 }
 
 .products-cards-price {
@@ -378,6 +381,9 @@ body {
   text-align: center;
   color: #000000;
   border: 3px solid #e5e5e5;
+  padding: 18px 0;
+  margin: 0 auto 44px auto;
+  width: 760px;
 }
 
 .pagination {
@@ -505,6 +511,7 @@ body {
   width: 471px;
   margin-left: 276px;
   list-style-type: none;
+  padding: 0;
 }
 
 .navigation-catalog-products {
@@ -542,6 +549,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  padding: 0;
 }
 
 .product-categories-item {
@@ -656,6 +664,7 @@ body {
   justify-content: space-between;
   margin: 0 auto 62px auto;
   list-style-type: none;
+  padding: 0;
 }
 
 .footer-contacts-list {
@@ -664,6 +673,7 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   list-style-type: none;
+  padding: 0;
 }
 
 .footer-phone {
@@ -674,16 +684,17 @@ body {
 }
 
 .inner-header {
-  width: 1079;
-  margin-left: 200px;
-  margin-right: 161px;
+  width: 1079px;
+  margin: 35px auto 34px auto;
+  padding: 0;
 }
 
 .breadcrumbs-list {
   display: flex;
-  justify-content: space-between;
-  width: 430px;
-  margin-left: 0;
+  justify-content: flex-start;
+  list-style-type: none;
+  min-width: 430px;
+  padding: 0;
 }
 
 .catalog-products-menu {
@@ -694,7 +705,6 @@ body {
 
 .catalog-products-cards {
   width: 840px;
-  margin-left: 0;
 }
 
 .catalog-sorting {
@@ -702,6 +712,7 @@ body {
   display: flex;
   width: 840px;
   justify-content: space-between;
+  padding: 0 40px 0 40px;
 }
 
 .catalog-products-filter-title {
@@ -711,16 +722,17 @@ body {
   text-decoration: none;
   width: 270px;
   margin-left: 60px;
+  margin-bottom: 35px;
 }
 
 .catalog-filter-color {
   width: 200px;
-  margin: 0 auto;
+  margin: 0 auto 35px auto;
 }
 
 .catalog-filter-bluetooth {
   width: 200px;
-  margin: 0 auto;
+  margin: 0 auto 35px auto;
 }
 
 .filter-button {
@@ -735,11 +747,13 @@ body {
 
 .products-cards {
   width: 840px;
+  padding: 70px 40px 78px 40px;
 }
 
 .products-cards-list {
   width: 760px;
   margin: 0 auto;
+  padding: 0 0 44px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -758,20 +772,18 @@ body {
   color: #000000;
 }
 
-.show-more-products {
-  width: 760px;
-  margin: 0 auto;
-}
-
 .pagination-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
 }
 
 .controls-list {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -793,10 +805,13 @@ body {
 
 .navigation-catalog-products-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .characteristic-product-list {
   list-style-type: none;
+  padding: 0;
+  margin-right: 40px;
 }
 
 .characteristic-product {
@@ -835,7 +850,43 @@ body {
   margin-bottom: 0;
 }
 
-.working-hours-list{
+.working-hours-list {
   list-style-type: none;
   margin-bottom: 30px;
+  padding: 0;
+}
+
+.transport-companies-list {
+  padding: 0;
+}
+
+.sorting-products-list {
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
+  margin-right: 36px;
+}
+
+.product-card-name {
+  display: flex;
+  width: 360px;
+  justify-content: space-between;
+}
+
+.pagination-item {
+  margin: 15.5px auto;
+}
+
+.prev{
+  margin-right: 145.5px;
+}
+
+.next{
+  margin-left: 145.5px;
+}
+
+.catalog-filter-list{
+  list-style-type: none;
+  padding: 0;
 }
