@@ -444,19 +444,19 @@ body {
   content: url(../images/basket.svg);
 }
 
-.courier::after {
-  content: url(../images/courier.svg);
-  width: 136px;
+.courier {
+  background-image: url(../images/courier.svg);
 }
 
 .guarantee {
   background-image: url(../images/guarantee.svg);
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .credit {
   background-image: url(../images/credit.svg);
+}
+
+.services-slide {
   background-repeat: no-repeat;
   background-position: right;
 }
