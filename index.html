@@ -152,12 +152,22 @@
             </div>
           </div>
         </div>
-        <div class="controls-slides">
-          <button type="button">Влево</button>
-          <button type="button">Вправо</button>
-          <div class="slide-one">1</div>
-          <div class="slide-two">2</div>
-          <div class="slide-three">3</div>
+        <div class="controls-slides-button">
+          <button class="controls-button">
+            <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black" />
+            </svg>
+          </a>
+          <button class="controls-button">
+            <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black" />
+            </svg>
+          </a>
+        </div>
+        <div class="controls-slides-number">
+          <button class="slide-number"></button>
+          <button class="slide-number"></button>
+          <button class="slide-number"></button>
         </div>
       </section>
       <section class="product-categories">
@@ -306,61 +316,66 @@
         </div>
       </section>
       <section class="subscription">
-        <h2 class="subscription-header">Подпишитесь на рассылку</h2>
-        <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками,
-          а также акции, спецпредложения и вот это вот всё.</p>
-        <form class="subcription-form" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="subscription-email" type="email" placeholder="Ваш e-mail">
-          <button class="subscription-button" type="submit">Подписаться</button>
-        </form>
-        <span class="free">Это бесплатно</span>
+        <div class="subscription-content">
+          <h2 class="subscription-header">Подпишитесь на рассылку</h2>
+          <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+            распаковками,
+            а также акции, спецпредложения и вот это вот всё.</p>
+          <form class="subcription-form" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="subscription-email" type="email" placeholder="Ваш e-mail">
+            <button class="subscription-button" type="submit">Подписаться</button>
+          </form>
+          <span class="free">Это бесплатно</span>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer-address">
-        <img class="footer-logo" src="images/logo-footer.svg" alt="Логотип интернет-магазина Девайс." width="145"
-          height="36">
-        <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </div>
-      <nav class="footer-navigation">
-        <ul class="footer-navigation-list">
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="footer-contacts-list">
-          <li class="footer-contacts-item">
-            <a href="https://t.me/htmlacademy" class="footer-contacts-link">
-              <img src="images/telegram.svg" class="logo-telegram" alt="Логотип телеграм." width="40" height="40">
+      <section class="footer-container">
+        <div class="footer-address">
+          <img class="footer-logo" src="images/logo-footer.svg" alt="Логотип интернет-магазина Девайс." width="145"
+            height="36">
+          <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </div>
+        <nav class="footer-navigation">
+          <ul class="footer-navigation-list">
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <a href="https://t.me/htmlacademy" class="footer-contacts-link">
+                <img src="images/telegram.svg" class="logo-telegram" alt="Логотип телеграм." width="40" height="40">
+              </a>
+            </li>
+            <li class="footer-contacts-item">
+              <a href="https://www.youtube.com/user/htmlacademyru" class="footer-contacts-link">
+                <img src="images/youtube.svg" class="logo-youtube" alt="Логотип ютуб." width="40" height="40">
+              </a>
+            </li>
+            <li class="footer-contacts-item">
+              <a href="https://twitter.com/htmlacademy_ru" class="footer-contacts-link">
+                <img src="images/twitter.svg" class="logo-twitter" alt="Логотип твиттер." width="40" height="40">
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-phone">
+          <a class="footer-contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <p class="footer-logo">
+            <a class="html-academy-logo" href="https://htmlacademy.ru/">
+              <img class="html-academy-logo-image" src="images/htmlacademy.svg" alt="Логотип сайта HTML Academy."
+                width="115" height="33">
             </a>
-          </li>
-          <li class="footer-contacts-item">
-            <a href="https://www.youtube.com/user/htmlacademyru" class="footer-contacts-link">
-              <img src="images/youtube.svg" class="logo-youtube" alt="Логотип ютуб." width="40" height="40">
-            </a>
-          </li>
-          <li class="footer-contacts-item">
-            <a href="https://twitter.com/htmlacademy_ru" class="footer-contacts-link">
-              <img src="images/twitter.svg" class="logo-twitter" alt="Логотип твиттер." width="40" height="40">
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer-phone">
-        <a class="footer-contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-        <p class="footer-logo">
-          <a class="html-academy-logo" href="https://htmlacademy.ru/">
-            <img class="html-academy-logo-image" src="images/htmlacademy.svg" alt="Логотип сайта HTML Academy."
-              width="115" height="33">
-          </a>
-        </p>
-      </div>
+          </p>
+        </div>
+      </section>
     </footer>
   </body>
 
