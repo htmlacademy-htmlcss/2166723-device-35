@@ -83,7 +83,7 @@ button {
   line-height: 30px;
   color: #000000;
   text-decoration: none;
-  margin-left: 28px;
+  margin-left: 25px;
 }
 
 .navigation-services-link,
@@ -109,6 +109,7 @@ button {
 
 .product-slogan {
   font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 29px;
@@ -123,13 +124,17 @@ button {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   color: #000000;
-  background-color: #ffe17f;
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 50px;
+  min-height: 40px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .characteristic-product-item {
@@ -201,6 +206,7 @@ button {
 
 .services-title {
   font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   width: 242px;
@@ -236,6 +242,7 @@ button {
 
 .contacts-header {
   font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   margin: 47px auto 48px 0;
@@ -256,7 +263,11 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  background-color: #ffe17f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  max-width: 270px;
 }
 
 .address-header,
@@ -289,12 +300,31 @@ button {
 
 .subscription-button {
   font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   padding: 18px 39px;
   width: 250px;
+  border: 3px solid #C4C4C4;
+}
+
+.subscription-button:hover {
+  background: #000000;
+  border: 3px solid #000000;
+  color: #ffffff;
+}
+
+.subscription-button:active {
+  background: #000000;
+  border: 3px solid #000000;
+  color: #C4C4C4;
+}
+
+.subscription-button:focus {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
 }
 
 .page-footer {
@@ -328,6 +358,7 @@ button {
 
 .inner-header-title {
   font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   margin-top: 0;
@@ -361,14 +392,6 @@ button {
   line-height: 20px;
 }
 
-.filter-button {
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  border: none;
-  padding: 10px 5px;
-}
-
 .catalog-products-filter {
   background-color: #f0f0f0;
   width: 320px;
@@ -390,25 +413,42 @@ button {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
-  background-color: #ffe17f;
   color: #000000;
+  position: absolute;
+  top: 170px;
+  left: 70px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
 }
 
-.new-product {
+.new-product::before {
+  content: "NEW";
   color: rgba(0, 0, 0, 0.6);
   font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
   text-transform: uppercase;
   width: 60px;
   height: 60px;
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  padding: 19px 10px;
+  position: absolute;
+  top: 27px;
+  right: 27px;
+}
+
+.product-card-item {
+  position: relative;
+}
+
+.product-card-cover {
+  margin-bottom: 32px;
 }
 
 .products-cards-title {
@@ -426,17 +466,6 @@ button {
   line-height: 21px;
   text-align: right;
   color: #444444;
-}
-
-.show-more-products {
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #000000;
-  border: 3px solid #e5e5e5;
-  padding: 18px 0;
-  margin: 0 auto 44px auto;
-  width: 760px;
 }
 
 .pagination {
@@ -482,6 +511,7 @@ button {
 
 .basket {
   background: url(../images/basket.svg) no-repeat center left;
+  padding-left: 12px;
 }
 
 .courier {
@@ -519,7 +549,6 @@ button {
 }
 
 .logo-header {
-  display: block;
   margin-left: 60px;
   margin-bottom: 30px;
 }
@@ -668,6 +697,7 @@ button {
 
 .subscription-header {
   font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   margin-left: 147px;
@@ -791,6 +821,11 @@ button {
   width: 220px;
   margin-left: 60px;
   margin-right: 40px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  border: none;
+  padding: 10px 5px;
 }
 
 .products-cards {
@@ -816,6 +851,30 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border: 3px solid #e5e5e5;
+  padding: 18px 0;
+  margin: 0 auto 44px auto;
+  width: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-more-products-link:hover {
+  border: 3px solid #000000;
+}
+
+.show-more-products-link:active {
+  opacity: 0.3;
+  border: 3px solid #000000;
+}
+
+.show-more-products-link:focus {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
 }
 
 .pagination-list {
@@ -1015,4 +1074,49 @@ button {
   border-radius: 50%;
   margin-right: 20px;
   padding: 0;
+}
+
+.page-logo {
+  display: block;
+  width: 145px;
+  height: 36px;
+}
+
+.page-logo:hover {
+  opacity: 0.6;
+}
+
+.page-logo:active {
+  opacity: 0.3;
+}
+
+.page-logo:focus {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.decoration-link:hover {
+  background-color: #ffe17f;
+}
+
+.decoration-link:active {
+  background-color: #ffcc33;
+}
+
+.decoration-link:focus {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
 }
