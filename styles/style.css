@@ -137,7 +137,17 @@ button {
   margin-right: 12px;
 }
 
-.navigation-services-link,
+.navigation-services-link {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21.13px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .catalog-products-link {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -147,6 +157,14 @@ button {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-catalog-products{
+  width: 236px;
+  text-align: start;
 }
 
 .navigation-catalog-products-link {
@@ -620,7 +638,6 @@ button {
 
 .catalog-products-navigation {
   display: flex;
-  justify-content: space-between;
   width: 293px;
   align-items: center;
 }
@@ -944,9 +961,14 @@ button {
 }
 
 .catalog-products-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  opacity: 0.3;
+  border: 2px solid #000000;
 }
 
 .navigation-catalog-products-list {
