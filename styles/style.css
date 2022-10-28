@@ -120,7 +120,21 @@ button {
   line-height: 30px;
   color: #000000;
   text-decoration: none;
-  margin-left: 25px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-icon,
+.comparison,
+.basket {
+  margin-right: 12px;
+}
+
+.basket {
+  margin-top: 5px;
+  margin-right: 12px;
 }
 
 .navigation-services-link,
@@ -535,20 +549,10 @@ button {
 
 .user-panel {
   display: flex;
-  justify-content: start;
   width: 230px;
   margin-left: 26px;
+  justify-content: space-between;
   align-items: center;
-  background: url(../images/user.svg) center left no-repeat;
-}
-
-.comparison {
-  background: url(../images/comparison.svg) no-repeat center left;
-}
-
-.basket {
-  background: url(../images/basket.svg) no-repeat center left;
-  padding-left: 12px;
 }
 
 .courier {
@@ -1167,6 +1171,22 @@ button {
 }
 
 .decoration-header-link:focus {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.logo-messenger:hover {
+  background-color: #ffc700;
+  border-radius: 50%;
+}
+
+.logo-messenger:active {
+  background-color: #ffc700;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.logo-messenger:focus {
   box-shadow: inset 0 0 0 2px #af4fff;
   outline: none;
 }
