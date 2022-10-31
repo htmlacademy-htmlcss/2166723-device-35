@@ -200,6 +200,16 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.detailed-characteristic-product::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 8px;
+  background-color: #ffe17f;
+  z-index: -1;
 }
 
 .characteristic-product-item {
@@ -222,6 +232,19 @@ button {
   display: grid;
   grid-template-rows: 160px min-content;
   gap: 32px;
+}
+
+.product-categories-link .product-categories-image:hover {
+  background-color: #ffc700;
+}
+
+.product-categories-link:active {
+  opacity: 0.3;
+}
+
+.product-card-item:focus-within {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
 }
 
 .product-categories-image {
@@ -265,8 +288,21 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-link::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 8px;
   background-color: #ffe17f;
-  text-align: center;
+  z-index: -1;
+  display: flex;
+  align-items: center;
 }
 
 .services-title {
@@ -277,6 +313,16 @@ button {
   width: 242px;
   margin: 0;
   margin-bottom: 34px;
+}
+
+.store-information::before,
+.contact-store::before {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 8px;
+  background-color: #ffe17f;
+  z-index: -1;
 }
 
 .delivery-products {
@@ -487,6 +533,20 @@ button {
   justify-content: center;
   align-items: center;
   min-height: 40px;
+  z-index: 1;
+}
+
+.products-cards-link::before {
+  content: "";
+  position: absolute;
+  width: 216px;
+  height: 8px;
+  background-color: #ffe17f;
+  z-index: -1;
+}
+
+.products-cards-link:active::before {
+  background-color: #ffc700;
 }
 
 .new-product::before {
@@ -636,6 +696,21 @@ button {
   display: flex;
   width: 293px;
   align-items: center;
+}
+
+.button-catalog-products .catalog-products-button:hover,
+.button-catalog-products .catalog-products-button:active {
+  opacity: 1;
+}
+
+.exit-user {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.button-catalog-products:focus {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
 }
 
 .navigation-services-list {
@@ -880,6 +955,16 @@ button {
   text-align: center;
   border: none;
   padding: 10px 5px;
+  position: relative;
+}
+
+.filter-button::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 8px;
+  background-color: #ffe17f;
+  z-index: -1;
 }
 
 .products-cards {
