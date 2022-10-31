@@ -152,7 +152,7 @@ button {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21.13px;
+  line-height: 21px;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
@@ -234,7 +234,7 @@ button {
   gap: 32px;
 }
 
-.product-categories-link .product-categories-image:hover {
+.product-categories-link:hover .product-categories-image {
   background-color: #ffc700;
 }
 
@@ -242,8 +242,8 @@ button {
   opacity: 0.3;
 }
 
-.product-card-item:focus-within {
-  box-shadow: inset 0 0 0 2px #af4fff;
+.product-categories-link:focus {
+  box-shadow: 0 0 0 2px #af4fff;
   outline: none;
 }
 
@@ -255,29 +255,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.slide-switching-quadcopter .slide-one,
-.slide-switching-smart-watch .slide-two,
-.slide-switching-selfie-stick .slide-three {
-  background-color: #000000;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-}
-
-.slide-switching-quadcopter .slide-two,
-.slide-switching-quadcopter .slide-three,
-.slide-switching-smart-watch .slide-one,
-.slide-switching-smart-watch .slide-three,
-.slide-switching-selfie-stick .slide-one,
-.slide-switching-selfie-stick .slide-two {
-  background-color: #ffffff;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
 }
 
 .services-link {
@@ -329,20 +306,41 @@ button {
   background-color: #f0f0f0;
   width: 1160px;
   margin: 0 auto;
-  display: flex;
 }
 
 .navigation-delivery-products {
+  display: flex;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.navigation-delivery-products:hover .delivery-products-image {
+  background-color: #ffc700;
+}
+
+.navigation-delivery-products:hover .delivery-info-icon {
+  color: #000000;
+}
+
+.navigation-delivery-products:active {
+  opacity: 0.3;
+}
+
+.navigation-delivery-products:focus {
+  box-shadow: 0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.delivery-products-text {
   width: 910px;
-  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .delivery-products-image {
@@ -465,6 +463,84 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
+
+.footer-navigation-link:hover {
+  color: #ffc700;
+  text-decoration: underline;
+}
+
+.footer-navigation-link:active {
+  color: #ffc700;
+  text-decoration: underline;
+  opacity: 0.3;
+}
+
+.footer-navigation-link:focus {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.footer-contacts-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-contacts-link {
+  display: block;
+  height: 40px;
+}
+
+.footer-contacts-link:hover img {
+  background-color: #ffc700;
+  border-radius: 50%;
+}
+
+.footer-contacts-link:active img {
+  background-color: #ffc700;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.footer-contacts-link:focus {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.footer-contacts-phone:hover {
+  color: #ffc700;
+}
+
+.footer-contacts-phone:active {
+  color: #ffc700;
+  opacity: 0.3;
+}
+
+.footer-contacts-phone:focus {
+  box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.html-academy-logo-link {
+  margin-top: 63px;
+  display: block;
+  width: 115px;
+}
+
+.html-academy-logo-link:hover svg {
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+
+.html-academy-logo-link:active svg {
+  stroke: #ffffff;
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.html-academy-logo-link:focus {
+  box-shadow: 0 0 0 2px #af4fff;
+  outline: none;
 }
 
 .inner-header-title {
@@ -692,20 +768,14 @@ button {
   margin: 0 auto;
 }
 
-.catalog-products-navigation {
-  display: flex;
-  width: 293px;
-  align-items: center;
-}
-
-.button-catalog-products .catalog-products-button:hover,
-.button-catalog-products .catalog-products-button:active {
-  opacity: 1;
-}
-
 .exit-user {
   color: #000000;
   opacity: 0.3;
+}
+
+.button-catalog-products:hover span,
+.button-catalog-products:active span {
+  opacity: 1;
 }
 
 .button-catalog-products:focus {
@@ -796,11 +866,6 @@ button {
 
 .services-text {
   width: 452px;
-}
-
-.delivery-info-image {
-  display: block;
-  margin: 30px auto;
 }
 
 .delivery-transport {
@@ -1086,6 +1151,23 @@ button {
 
 .delivery-info {
   width: 125px;
+  padding: 30px 42px;
+}
+
+.delivery-info-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(220, 220, 220, 0.5);
+  color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", "Arial", sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .contacts-text {
