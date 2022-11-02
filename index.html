@@ -157,7 +157,7 @@
               </div>
             </div>
           </div>
-          <div class="slide">
+          <div class="slide visually-hidden">
             <div class="slide-image">
               <img src="images/sliders/fitness-bracelet.png" class="recommended-products-image" alt="Фитнес-браслет."
                 width="560" height="560">
@@ -176,7 +176,7 @@
               </div>
             </div>
           </div>
-          <div class="slide">
+          <div class="slide visually-hidden">
             <div class="slide-image">
               <img src="images/sliders/selfie-stick.png" class="recommended-products-image" alt="Селфи-палки."
                 width="560" height="560">
@@ -205,13 +205,13 @@
           </div>
         </div>
         <div class="controls-slides-button">
-          <button class="controls-button">
-            <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button class="controls-slide-button">
+            <svg class="controls-button" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black" />
             </svg>
             </a>
-            <button class="controls-button">
-              <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="controls-slide-button">
+              <svg class="controls-button" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"
                   fill="black" />
@@ -219,9 +219,9 @@
               </a>
         </div>
         <div class="controls-slides-number">
-          <button class="slide-number"></button>
-          <button class="slide-number"></button>
-          <button class="slide-number"></button>
+          <button class="slide-number activated-slide-number"><span class="visually-hidden">1 слайд</span></button>
+          <button class="slide-number"><span class="visually-hidden">2 слайд</span></button>
+          <button class="slide-number"><span class="visually-hidden">3 слайд</span></button>
         </div>
       </section>
       <section class="product-categories">
@@ -232,7 +232,7 @@
               <a class="product-categories-link" href="#">
                 <div class="product-categories-image">
                   <img class="product-image" src="images/categories/virtual-reality.svg" alt="Виртуальная реальность."
-                    width="96.95" height="54.99">
+                    width="97" height="55">
                 </div>
                 <span class="product-categories-title">Виртуальная реальность</span>
               </a>
@@ -241,7 +241,7 @@
               <a class="product-categories-link" href="#">
                 <div class="product-categories-image">
                   <img class="product-image" src="images/categories/monopods-for-selfies.svg" alt="Моноподы для селфи."
-                    width="85.87" height="117">
+                    width="86" height="117">
                 </div>
                 <span class="product-categories-title">Моноподы для селфи</span>
               </a>
@@ -249,7 +249,7 @@
             <li class="product-categories-item">
               <a class="product-categories-link" href="#">
                 <div class="product-categories-image">
-                  <img class="product-image" src="images/categories/action-cameras.svg" alt="Экшн-камеры." width="71.02"
+                  <img class="product-image" src="images/categories/action-cameras.svg" alt="Экшн-камеры." width="71"
                     height="87">
                 </div>
                 <span class="product-categories-title">Экшн-камеры</span>
@@ -259,7 +259,7 @@
               <a class="product-categories-link" href="#">
                 <div class="product-categories-image">
                   <img class="product-image" src="images/categories/fitness-bracelets.svg" alt="Фитнес-браслеты."
-                    width="107.31" height="64.99">
+                    width="107" height="65">
                 </div>
                 <span class="product-categories-title">Фитнес-браслеты</span>
               </a>
@@ -267,8 +267,8 @@
             <li class="product-categories-item">
               <a class="product-categories-link" href="#">
                 <div class="product-categories-image">
-                  <img class="product-image" src="images/categories/smart-watch.svg" alt="Умные часы." width="56.01"
-                    height="97.98">
+                  <img class="product-image" src="images/categories/smart-watch.svg" alt="Умные часы." width="56"
+                    height="98">
                 </div>
                 <span class="product-categories-title">Умные часы</span>
               </a>
@@ -276,8 +276,8 @@
             <li class="product-categories-item">
               <a class="product-categories-link" href="#">
                 <div class="product-categories-image">
-                  <img class="product-image" src="images/categories/quadcopters.svg" alt="Квадрокоптеры." width="132.03"
-                    height="69.01">
+                  <img class="product-image" src="images/categories/quadcopters.svg" alt="Квадрокоптеры." width="132"
+                    height="69">
                 </div>
                 <span class="product-categories-title">Квадрокоптеры</span>
               </a>
@@ -314,9 +314,7 @@
           <div class="services-slide credit">
             <h3 class="services-title">Кредит</h3>
             <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-              наиболее
-              выгодные
-              условия кредита. Выгодные для банка, разумеется.</p>
+              наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </div>
         </div>
       </section>
@@ -409,17 +407,17 @@
           <ul class="footer-contacts-list">
             <li class="footer-contacts-item">
               <a href="https://t.me/htmlacademy" class="footer-contacts-link">
-                <img src="images/telegram.svg" class="logo-telegram" alt="Логотип телеграм." width="40" height="40">
+                <img src="images/telegram.svg" class="logo-messenger" alt="Логотип телеграм." width="40" height="40">
               </a>
             </li>
             <li class="footer-contacts-item">
               <a href="https://www.youtube.com/user/htmlacademyru" class="footer-contacts-link">
-                <img src="images/youtube.svg" class="logo-youtube" alt="Логотип ютуб." width="40" height="40">
+                <img src="images/youtube.svg" class="logo-messenger" alt="Логотип ютуб." width="40" height="40">
               </a>
             </li>
             <li class="footer-contacts-item">
               <a href="https://twitter.com/htmlacademy_ru" class="footer-contacts-link">
-                <img src="images/twitter.svg" class="logo-twitter" alt="Логотип твиттер." width="40" height="40">
+                <img src="images/twitter.svg" class="logo-messenger" alt="Логотип твиттер." width="40" height="40">
               </a>
             </li>
           </ul>

@@ -491,22 +491,6 @@ button {
   height: 40px;
 }
 
-.footer-contacts-link:hover img {
-  background-color: #ffc700;
-  border-radius: 50%;
-}
-
-.footer-contacts-link:active img {
-  background-color: #ffc700;
-  border-radius: 50%;
-  opacity: 0.3;
-}
-
-.footer-contacts-link:focus {
-  box-shadow: inset 0 0 0 2px #af4fff;
-  outline: none;
-}
-
 .footer-contacts-phone:hover {
   color: #ffc700;
 }
@@ -835,6 +819,7 @@ button {
   width: 1160px;
   margin: 0 auto;
   margin-bottom: 70px;
+  position: relative;
 }
 
 .slide {
@@ -843,9 +828,9 @@ button {
   margin-left: 0;
 }
 
-.slide-image {
+.recommended-products-image {
   display: block;
-  margin-left: 0;
+  margin: 0;
 }
 
 .slide-info {
@@ -1328,14 +1313,33 @@ button {
   justify-content: space-between;
 }
 
-.controls-button {
+.controls-slide-button {
   width: 20px;
   height: 60px;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.controls-slide-button:hover {
+  opacity: 0.6;
+}
+
+.controls-slide-button:active {
+  opacity: 0.3;
+}
+
+.controls-slide-button:focus {
+  box-shadow: 0 0 0 2px #af4fff;
+  outline: none;
 }
 
 .controls-slides-number {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .slide-number {
@@ -1345,6 +1349,27 @@ button {
   border-radius: 50%;
   margin-right: 20px;
   padding: 0;
+  background-color: #ffffff;
+}
+
+.activated-slide-number:hover,
+.slide-number:hover {
+  opacity: 0.6;
+}
+
+.activated-slide-number:active,
+.slide-number:active {
+  opacity: 0.3;
+}
+
+.activated-slide-number:focus,
+.slide-number:focus {
+  box-shadow: 0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.activated-slide-number {
+  background-color: #000000;
 }
 
 .page-logo {
@@ -1405,18 +1430,25 @@ button {
   outline: none;
 }
 
-.logo-messenger:hover {
+.footer-contacts-link:hover img {
   background-color: #ffc700;
   border-radius: 50%;
 }
 
-.logo-messenger:active {
+.footer-contacts-link:active img {
   background-color: #ffc700;
   border-radius: 50%;
   opacity: 0.3;
 }
 
-.logo-messenger:focus {
+.footer-contacts-link:focus {
   box-shadow: inset 0 0 0 2px #af4fff;
   outline: none;
+}
+
+.controls-slides-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 560px;
 }
