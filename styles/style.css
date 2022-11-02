@@ -593,10 +593,33 @@ button {
   background-color: #f0f0f0;
 }
 
-.products-cards-link {
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-link:hover img,
+.product-card-link:hover .products-cards-title {
+  opacity: 0.6;
+}
+
+.product-card-link:active img {
+  opacity: 0.6;
+}
+
+.product-card-link:active .products-cards-title,
+.product-card-link:active .products-cards-price {
+  opacity: 0.3;
+}
+
+.product-card-link:focus {
+  box-shadow: 0 0 0 2px #af4fff;
+  outline: none;
+  position: absolute;
+}
+
+.products-card-more {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 21px;
@@ -605,14 +628,23 @@ button {
   top: 170px;
   left: 70px;
   width: 220px;
-  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 40px;
   z-index: 1;
+  display: none;
 }
 
-.products-cards-link::before {
+.product-card-link:hover .products-card-more {
+  display: flex;
+}
+
+.product-card-link:active .products-card-more::before {
+  display: flex;
+  background-color: #ffc700;
+}
+
+.products-card-more::before {
   content: "";
   position: absolute;
   width: 216px;
@@ -621,7 +653,7 @@ button {
   z-index: -1;
 }
 
-.products-cards-link:active::before {
+.products-card-more:active::before {
   background-color: #ffc700;
 }
 
