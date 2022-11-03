@@ -152,7 +152,29 @@
           <div class="catalog-products-filter">
             <h2 class="catalog-products-filter-title">фильтр:</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <!--Здесь должен быть блок со стоимостью-->
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px" >
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Измените минимальную стоимость.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Измените максимальную стоимость.</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
               <fieldset class="catalog-filter-color">
                 <legend class="catalog-filter-title">Цвет</legend>
                 <ul class="catalog-filter-list">
@@ -357,20 +379,17 @@
           <ul class="footer-contacts-list">
             <li class="footer-contacts-item">
               <a href="https://t.me/htmlacademy" class="footer-contacts-link">
-                <img src="images/telegram.svg" class="logo-messenger" alt="Логотип телеграм." width="40"
-                  height="40">
+                <img src="images/telegram.svg" class="logo-messenger" alt="Логотип телеграм." width="40" height="40">
               </a>
             </li>
             <li class="footer-contacts-item">
               <a href="https://www.youtube.com/user/htmlacademyru" class="footer-contacts-link">
-                <img src="images/youtube.svg" class="logo-messenger" alt="Логотип ютуб." width="40"
-                  height="40">
+                <img src="images/youtube.svg" class="logo-messenger" alt="Логотип ютуб." width="40" height="40">
               </a>
             </li>
             <li class="footer-contacts-item">
               <a href="https://twitter.com/htmlacademy_ru" class="footer-contacts-link">
-                <img src="images/twitter.svg" class="logo-messenger" alt="Логотип твиттер." width="40"
-                  height="40">
+                <img src="images/twitter.svg" class="logo-messenger" alt="Логотип твиттер." width="40" height="40">
               </a>
             </li>
           </ul>
