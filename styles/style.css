@@ -560,11 +560,6 @@ button {
   margin-bottom: 20px;
 }
 
-.control {
-  font-size: 16px;
-  line-height: 20px;
-}
-
 .catalog-products-filter {
   background-color: #f0f0f0;
   width: 320px;
@@ -1018,11 +1013,11 @@ button {
   margin-bottom: 35px;
 }
 
-.catalog-filter-bluetooth,
-.catalog-filter-group,
-.catalog-filter-color {
+.catalog-filter-group {
   width: 200px;
   margin: 0 auto 35px auto;
+  padding: 0;
+  border: none;
 }
 
 .filter-button {
@@ -1545,4 +1540,56 @@ button {
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cccccc;
+  left: 0;
+  top: 2px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -7px;
+  left: 3px;
+  content: url(../images/checkbox.svg);
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
 }
