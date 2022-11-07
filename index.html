@@ -62,7 +62,7 @@
                 </svg>
                 Корзина
               </a>
-              <div class="popover popover-open">
+              <div class="popover popover-close">
                 <ul class="popover-list">
                   <li class="popover-item">
                     <a class="popover-link" href="#">
@@ -70,7 +70,9 @@
                         alt="Любительская селфи-палка.">
                       <span class="popover-product-name">Любительская селфи-палка</span>
                     </a>
-                    <button class="product-delete"><span class="visually-hidden">Удаление товара.</span></button>
+                    <button class="product-delete" type="button">
+                      <span class="visually-hidden">Удаление товара.</span>
+                    </button>
                   </li>
                   <li class="popover-item">
                     <a class="popover-link" href="#">
@@ -78,21 +80,23 @@
                         alt="Профессиональная селфи-палка">
                       <span class="popover-product-name">Профессиональная селфи-палка</span>
                     </a>
-                    <button class="product-delete"><span class="visually-hidden">Удаление товара.</span></button>
+                    <button class="product-delete" type="button">
+                      <span class="visually-hidden">Удаление товара.</span>
+                    </button>
                   </li>
                 </ul>
                 <div class="popover-info">
                   <span class="popover-info-text">Товаров: 2</span>
                   <span class="popover-info-text">Сумма: 2000 ₽</span>
                 </div>
-                <button class="open-basket-button">Открыть корзину</button>
+                <button class="open-basket-button" type="button">Открыть корзину</button>
               </div>
             </li>
           </ul>
         </div>
       </section>
       <nav class="navigation-services">
-        <button class="button-catalog-products">Каталог товаров
+        <button class="button-catalog-products" type="button">Каталог товаров
           <span class="catalog-products-button">+</span>
         </button>
         <ul class="navigation-services-list">
@@ -107,7 +111,7 @@
           </li>
         </ul>
       </nav>
-      <nav class="navigation-catalog-products">
+      <nav class="navigation-catalog-products navigation-catalog-products-close">
         <ul class="navigation-catalog-products-list">
           <li class="navigation-catalog-products-item">
             <a class="navigation-catalog-products-link decoration-header-link" href="#">Виртуальная реальность</a>
@@ -210,25 +214,26 @@
           </div>
         </div>
         <div class="controls-slides-button">
-          <button class="controls-slide-button">
+          <button class="controls-slide-button" type="button">
             <svg class="controls-button" width="20" height="60" viewBox="0 0 20 60" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black" />
             </svg>
-            </a>
-            <button class="controls-slide-button">
-              <svg class="controls-button" width="20" height="60" viewBox="0 0 20 60" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"
-                  fill="black" />
-              </svg>
-              </a>
+          </button>
+          <button class="controls-slide-button" type="button">
+            <svg class="controls-button" width="20" height="60" viewBox="0 0 20 60" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"
+                fill="black" />
+            </svg>
+          </button>
         </div>
         <div class="controls-slides-number">
-          <button class="slide-number activated-slide-number"><span class="visually-hidden">1 слайд</span></button>
-          <button class="slide-number"><span class="visually-hidden">2 слайд</span></button>
-          <button class="slide-number"><span class="visually-hidden">3 слайд</span></button>
+          <button class="slide-number activated-slide-number" type="button"><span class="visually-hidden">1
+              слайд</span></button>
+          <button class="slide-number"><span class="visually-hidden" type="button">2 слайд</span></button>
+          <button class="slide-number"><span class="visually-hidden" type="button">3 слайд</span></button>
         </div>
       </section>
       <section class="product-categories">
@@ -245,7 +250,7 @@
               </a>
             </li>
             <li class="product-categories-item">
-              <a class="product-categories-link" href="#">
+              <a class="product-categories-link" href="catalog.html">
                 <div class="product-categories-image">
                   <img class="product-image" src="images/categories/monopods-for-selfies.svg" alt="Моноподы для селфи."
                     width="86" height="117">
@@ -440,6 +445,48 @@
         </div>
       </section>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <div class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-exit" type="button">
+            <span class="visually-hidden">Закрыть.</span>
+          </button>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <ul class="modal-list">
+              <li class="modal-item">
+                <label class="modal-form-order" for="your-name">Ваше имя:</label>
+                <input class="modal-form-input your-name" type="text" id="your-name" name="your-name" placeholder="Введите имя">
+                <span class="input-prompt">Добавьте имя</span>
+              </li>
+              <li class="modal-item">
+                <label class="modal-form-order" for="email">Ваш e-mail:</label>
+                <input class="modal-form-input email" type="email" id="email" name="email" value="почта">
+                <span class="input-prompt">Забавный у вас адрес</span>
+              </li>
+            </ul>
+            <ul class="modal-list">
+              <li class="modal-item">
+                <label class="modal-form-order" for="product-request">Что нужно привезти:</label>
+                <input class="modal-form-input input-request" type="text" id="product-request" name="product-request"
+                  placeholder="В свободной форме">
+              </li>
+              <li class="modal-item">
+                  <label class="modal-form-order" for="number-products">Количество:</label>
+                  <span class="modal-info">i</span>
+                <div class="container-input-number">
+                  <button class="modal-button" type="button">-</button>
+                  <input class="modal-form-input input-number-products" type="number" id="number-products"
+                    name="number-products" placeholder="1">
+                  <button class="modal-button" type="button">+</button>
+                </div>
+              </li>
+            </ul>
+            <button class="button-send" type="submit"><span class="button-send-text">Отправить</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 
 </html>
