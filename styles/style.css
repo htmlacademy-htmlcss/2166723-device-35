@@ -151,7 +151,10 @@ button {
   align-items: center;
   justify-content: space-between;
   width: 293px;
-  background-color: #ffe17f;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+  height: min-content;
 }
 
 .navigation-catalog-products-link {
@@ -796,6 +799,7 @@ button {
   display: flex;
   width: 1040px;
   margin: 0 auto;
+  position: relative;
 }
 
 .exit-user {
@@ -806,6 +810,10 @@ button {
 .button-catalog-products:hover span,
 .button-catalog-products:active span {
   opacity: 1;
+}
+
+.button-catalog-products:focus nav {
+  display: block;
 }
 
 .button-catalog-products:focus {
@@ -823,16 +831,25 @@ button {
 }
 
 .navigation-catalog-products {
-  display: flex;
   margin: 0 auto;
+  display: none;
   width: 1160px;
   padding-left: 60px;
-  padding-top: 33px;
   padding-bottom: 27px;
+  background-color: #ffe17f;
+  z-index: 1;
+  position: absolute;
+  left: -60px;
+  top: 66px;
+  min-height: 180px;
 }
 
-.navigation-catalog-products-close {
-  display: none;
+.button-catalog-products:active + nav {
+  display: flex;
+}
+
+.button-catalog-products:focus + nav {
+  display: flex;
 }
 
 .slider {
@@ -1579,21 +1596,30 @@ button {
 }
 
 .control-mark {
+  position: relative;
+}
+
+.control-mark::after {
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
   border: 2px solid #cccccc;
-  left: 0;
-  top: 2px;
+  left: -36px;
+  top: 0;
+  border-radius: 3px;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
+  border: 2px solid #000000;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   width: 10px;
   height: 10px;
-  top: -7px;
-  left: 3px;
+  top: -6px;
+  left: -31px;
   content: url(../images/checkbox.svg);
 }
 
@@ -1601,17 +1627,21 @@ button {
   margin-bottom: 17px;
 }
 
-.control-input[type="radio"] + .control-mark {
+.control-input[type="radio"] + .control-mark::after {
   border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::after {
+  border: 2px solid #000000;
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 6px;
+  left: -30px;
   width: 8px;
   height: 8px;
-  background-color: #242424;
+  background-color: #000000;
   border-radius: 50%;
   content: "";
 }
@@ -1631,6 +1661,7 @@ button {
   min-height: 301px;
   color: #ffffff;
   background-color: #000000;
+  z-index: 1;
 }
 
 .popover-close {
@@ -1694,24 +1725,10 @@ button {
   height: 10px;
 }
 
-.product-delete::before,
-.product-delete::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  background-color: #ffffff;
-  width: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.product-delete::before {
-  transform: rotate(45deg);
-}
-
-.product-delete::after {
-  transform: rotate(-45deg);
+.product-delete {
+  background-image: url(/images/popover-delete.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .popover-item:not(:last-child) {
@@ -1934,4 +1951,24 @@ button {
   top: 16px;
   left: 0;
   z-index: -1;
+}
+
+.bascket::after {
+  content: "2";
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  left: -16px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.bascket {
+  position: relative;
 }
