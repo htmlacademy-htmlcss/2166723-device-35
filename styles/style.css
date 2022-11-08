@@ -51,7 +51,9 @@ button {
 }
 
 .page-header {
-  background-color: #ffe17f;
+  background: linear-gradient(to bottom,
+      #ffffff 0 25px,
+      #ffe17f 25px 100%);
   width: 1160px;
   margin: 0 auto;
   margin-top: 20px;
@@ -857,6 +859,7 @@ button {
   margin: 0 auto;
   margin-bottom: 70px;
   position: relative;
+  background: linear-gradient(to bottom, #ffe17f 0 150px, #ffffff 150px 100%);
 }
 
 .slide {
@@ -871,6 +874,7 @@ button {
 }
 
 .slide-info {
+  padding-top: 80px;
   width: 560px;
   margin-left: 40px;
 }
@@ -1471,8 +1475,7 @@ button {
 }
 
 .decoration-link:focus {
-  box-shadow: inset 0 0 0 2px #af4fff;
-  outline: none;
+  outline: 2px #af4fff solid;
 }
 
 .decoration-header-link:hover {
@@ -1726,7 +1729,7 @@ button {
 }
 
 .product-delete {
-  background-image: url(/images/popover-delete.svg);
+  background-image: url(../images/popover-delete.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1749,8 +1752,14 @@ button {
   line-height: 21px;
   text-transform: uppercase;
   padding: 15px 25px;
-  margin: 20px;
   width: 280px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  margin: 20px;
+  text-decoration: none;
 }
 
 .open-basket-button:hover {
@@ -1811,7 +1820,7 @@ button {
   height: 26px;
   background-color: transparent;
   border: none;
-  background-image: url(/images/modal-exit.svg);
+  background-image: url(../images/modal-exit.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1846,15 +1855,41 @@ button {
 }
 
 .modal-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   position: absolute;
   left: 120px;
   width: 26px;
   height: 26px;
   background-color: #ffe17f;
   border-radius: 50%;
+}
+
+.modal-info:hover .modal-info-navigation {
+  display: flex;
+}
+
+.modal-info-navigation {
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  width: 200px;
+  min-height: 160px;
+  padding: 19px;
+  background-color: #000000;
+  color: #ffffff;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-info-navigation::after {
+  content: "";
+  position: absolute;
+  border: 7px solid transparent;
+  border-bottom: 5px solid #000000;
+  top: -12px;
+  left: 146px;
 }
 
 .modal-form-order {
@@ -1865,6 +1900,14 @@ button {
   letter-spacing: -0.02em;
 }
 
+.email {
+  background: url(../images/modal-email.svg) no-repeat 325px;
+}
+
+.your-name {
+  background: url(../images/modal-user.svg) no-repeat 325px;
+}
+
 .modal-form-input {
   padding: 20px;
   background-color: #f0f0f0;
@@ -1872,7 +1915,33 @@ button {
   width: 360px;
   font-size: 16px;
   line-height: 20px;
+  color: #000000;
+}
+
+.modal-form-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-form-input:hover {
+  background-color: #dcdcdc;
+}
+
+.modal-form-input:focus {
+  outline: 2px #af4fff solid;
+}
+
+.modal-form-input:invalid + span {
+  color: #ff3d3d;
+}
+
+.modal-form-input:invalid {
+  color: #000000;
+  box-shadow: inset 0 0 0 2px #ff3d3d;
+}
+
+.modal-form-input:disabled {
+  background-color: #f0f0f0;
+  opacity: 0.3;
 }
 
 .input-request {
@@ -1908,23 +1977,6 @@ button {
   line-height: 20px;
 }
 
-.email + span {
-  color: #ff3d3d;
-}
-
-.email {
-  border: #ff3d3d solid 2px;
-  color: #000000;
-  outline: none;
-  background: url(/images/modal-email.svg) no-repeat right;
-}
-
-.your-name {
-  background-image: url(/images/modal-user.svg);
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
 .button-send {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1953,8 +2005,12 @@ button {
   z-index: -1;
 }
 
+.button-send:active .button-send-text::before {
+  background-color: #ffcc33;
+}
+
 .bascket::after {
-  content: "2";
+  content: attr(data-count);
   width: 21px;
   height: 21px;
   border-radius: 50%;
