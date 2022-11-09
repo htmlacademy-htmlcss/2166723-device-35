@@ -52,8 +52,8 @@ button {
 
 .page-header {
   background: linear-gradient(to bottom,
-      #ffffff 0 25px,
-      #ffe17f 25px 100%);
+      #ffffff 0 20px,
+      #ffe17f 20px 100%);
   width: 1160px;
   margin: 0 auto;
   margin-top: 20px;
@@ -134,7 +134,7 @@ button {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21.13px;
+  line-height: 21px;
   color: #000000;
   text-align: center;
   text-decoration: none;
@@ -197,6 +197,7 @@ button {
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 
 .detailed-characteristic-product::before {
@@ -206,6 +207,10 @@ button {
   height: 8px;
   background-color: #ffe17f;
   z-index: -1;
+}
+
+.detailed-characteristic-product:active:before {
+  background-color: #ffc700;
 }
 
 .characteristic-product-item {
@@ -260,11 +265,14 @@ button {
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.2em;
   color: #000000;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 40px;
+  z-index: 1;
 }
 
 .services-link::before {
@@ -302,6 +310,7 @@ button {
   background-color: #f0f0f0;
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .navigation-delivery-products {
@@ -410,11 +419,12 @@ button {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  padding: 15px 39px;
+  padding: 15px 0;
   width: 250px;
   border: 3px solid #C4C4C4;
   position: absolute;
   left: 557px;
+  letter-spacing: 0.2em;
 }
 
 .subscription-button:hover {
@@ -802,6 +812,7 @@ button {
   width: 1040px;
   margin: 0 auto;
   position: relative;
+  height: min-content;
 }
 
 .exit-user {
@@ -812,10 +823,6 @@ button {
 .button-catalog-products:hover span,
 .button-catalog-products:active span {
   opacity: 1;
-}
-
-.button-catalog-products:focus nav {
-  display: block;
 }
 
 .button-catalog-products:focus {
@@ -846,11 +853,23 @@ button {
   min-height: 180px;
 }
 
+.navigation-services-catalog {
+  height: min-content;
+}
+
+.button-catalog-products:hover + nav {
+  display: flex;
+}
+
 .button-catalog-products:active + nav {
   display: flex;
 }
 
 .button-catalog-products:focus + nav {
+  display: flex;
+}
+
+.navigation-services-catalog:focus-within .navigation-catalog-products {
   display: flex;
 }
 
@@ -874,7 +893,6 @@ button {
 }
 
 .slide-info {
-  padding-top: 80px;
   width: 560px;
   margin-left: 40px;
 }
@@ -894,25 +912,42 @@ button {
 }
 
 .services {
-  display: flex;
-  width: 1160px;
-  margin: 0 auto 70px auto;
+  width: 100%;
+  background: linear-gradient(to bottom,
+      #ffffff 0 105px,
+      #f0f0f0 105px 100%);
+  margin-bottom: 70px;
 }
 
-.activated-service {
-  color: #ffe17f;
-  background-color: #000000;
+.services-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 72px;
 }
 
 .services-item {
   width: 160px;
   margin-bottom: 35px;
-  text-align: center;
 }
 
-.activated-service-item {
+.services-item:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.activated-service {
+  width: 280px;
   background-color: #000000;
-  text-align: center;
+  display: flex;
+}
+
+.activated-service .services-link {
+  color: #ffe17f;
+  margin-left: 15px;
+}
+
+.activated-service .services-link::before {
+  content: none;
 }
 
 .services-slides {
@@ -1202,8 +1237,21 @@ button {
 
 .services-list {
   list-style-type: none;
-  margin: 64px 0 65px 0;
+  margin: 65px 0;
   padding: 0;
+  position: relative;
+}
+
+.services-list::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+  top: -64px;
+  left: 280px;
 }
 
 .delivery-info {
@@ -1654,7 +1702,7 @@ button {
 }
 
 .popover {
-  display: block;
+  display: none;
   top: 34px;
   left: -153px;
   position: absolute;
@@ -1665,10 +1713,6 @@ button {
   color: #ffffff;
   background-color: #000000;
   z-index: 1;
-}
-
-.popover-close {
-  display: none;
 }
 
 .popover::before {
@@ -1864,12 +1908,12 @@ button {
   border-radius: 50%;
 }
 
-.modal-info:hover .modal-info-navigation {
-  display: flex;
+.modal-info:hover + .modal-info-navigation {
+  display: flex
 }
 
 .modal-info-navigation {
-  display: flex;
+  display: none;
   font-size: 16px;
   line-height: 20px;
   width: 200px;
@@ -2027,4 +2071,9 @@ button {
 
 .bascket {
   position: relative;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.controls-basket:focus-within .popover {
+  display: block;
 }

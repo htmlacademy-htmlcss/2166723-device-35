@@ -47,7 +47,7 @@
                 Сравнить
               </a>
             </li>
-            <li class="controls-item">
+            <li class="controls-item controls-basket">
               <a class="controls-link decoration-header-link bascket" href="#" data-count="2">
                 <svg class="icon-header" width="16" height="14" viewBox="0 0 16 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@
                 </svg>
                 Корзина
               </a>
-              <div class="popover popover-close">
+              <div class="popover">
                 <ul class="popover-list">
                   <li class="popover-item">
                     <a class="popover-link" href="#">
@@ -91,35 +91,38 @@
         </div>
       </section>
       <nav class="navigation-services">
-        <button class="button-catalog-products" type="button">Каталог товаров
-          <span class="catalog-products-button">+</span>
-        </button>
-        <nav class="navigation-catalog-products">
-          <ul class="navigation-catalog-products-list">
-            <li class="navigation-catalog-products-item">
-              <a class="navigation-catalog-products-link decoration-header-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="navigation-catalog-products-item">
-              <a class="navigation-catalog-products-link decoration-header-link" href="#">Моноподы для cелфи</a>
-            </li>
-            <li class="navigation-catalog-products-item">
-              <a class="navigation-catalog-products-link decoration-header-link" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="navigation-catalog-products-list">
-            <li class="navigation-catalog-products-item">
-              <a class="navigation-catalog-products-link decoration-header-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="navigation-catalog-products-item">
-              <a class="navigation-catalog-products-link decoration-header-link" href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="navigation-catalog-products-list">
-            <li class="navigation-catalog-products-item">
-              <a class="navigation-catalog-products-link decoration-header-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="navigation-services-catalog">
+          <button class="button-catalog-products" type="button">Каталог товаров
+            <span class="catalog-products-button">+</span>
+          </button>
+          <nav class="navigation-catalog-products">
+            <ul class="navigation-catalog-products-list">
+              <li class="navigation-catalog-products-item">
+                <a class="navigation-catalog-products-link decoration-header-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="navigation-catalog-products-item">
+                <a class="navigation-catalog-products-link decoration-header-link" href="catalog.html">Моноподы для
+                  cелфи</a>
+              </li>
+              <li class="navigation-catalog-products-item">
+                <a class="navigation-catalog-products-link decoration-header-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="navigation-catalog-products-list">
+              <li class="navigation-catalog-products-item">
+                <a class="navigation-catalog-products-link decoration-header-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="navigation-catalog-products-item">
+                <a class="navigation-catalog-products-link decoration-header-link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="navigation-catalog-products-list">
+              <li class="navigation-catalog-products-item">
+                <a class="navigation-catalog-products-link decoration-header-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <ul class="navigation-services-list">
           <li class="navigation-services-item">
             <a class="navigation-services-link decoration-header-link" href="#">Доставка</a>
@@ -291,39 +294,6 @@
           </ul>
         </nav>
       </section>
-      <h2 class="visually-hidden">Услуги</h2>
-      <section class="services">
-        <ul class="services-list">
-          <li class="services-item activated-service-item">
-            <a class="services-link activated-service" href="#">Доставка</a>
-          </li>
-          <li class="services-item">
-            <a class="services-link" href="#">Гарантия</a>
-          </li>
-          <li class="services-item">
-            <a class="services-link" href="#">Кредит</a>
-          </li>
-        </ul>
-        <div class="services-slides">
-          <div class="services-slide courier">
-            <h3 class="services-title">Доставка</h3>
-            <p class="services-text">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </div>
-          <div class="services-slide guarantee visually-hidden">
-            <h3 class="services-title vi">Гарантия</h3>
-            <p class="services-text">Если из-за возгорания купленного у нас товара у вас
-              сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.</p>
-          </div>
-          <div class="services-slide credit visually-hidden">
-            <h3 class="services-title">Кредит</h3>
-            <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-              наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          </div>
-        </div>
-      </section>
       <h2 class="visually-hidden">Доставка</h2>
       <section class="delivery-products">
         <a class="navigation-delivery-products" href="#">
@@ -336,6 +306,41 @@
             <span class="delivery-info-icon">i</span>
           </div>
         </a>
+      </section>
+      <h2 class="visually-hidden">Услуги</h2>
+      <section class="services">
+        <div class="services-container">
+          <ul class="services-list">
+            <li class="services-item activated-service">
+              <a class="services-link" href="#">Доставка</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link" href="#">Гарантия</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link" href="#">Кредит</a>
+            </li>
+          </ul>
+          <div class="services-slides">
+            <div class="services-slide courier">
+              <h3 class="services-title">Доставка</h3>
+              <p class="services-text">Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно! Ведь
+                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="services-slide guarantee visually-hidden">
+              <h3 class="services-title vi">Гарантия</h3>
+              <p class="services-text">Если из-за возгорания купленного у нас товара у вас
+                сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.</p>
+            </div>
+            <div class="services-slide credit visually-hidden">
+              <h3 class="services-title">Кредит</h3>
+              <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="store-data">
         <div class="information-store">
@@ -456,7 +461,8 @@
               </li>
               <li class="modal-item">
                 <label class="modal-form-order" for="email">Ваш e-mail:</label>
-                <input class="modal-form-input email" type="email" id="email" name="email" value="почта" placeholder="Введите e-mail">
+                <input class="modal-form-input email" type="email" id="email" name="email" value="почта"
+                  placeholder="Введите e-mail">
                 <span class="input-prompt">Забавный у вас адрес</span>
               </li>
             </ul>
@@ -469,7 +475,8 @@
               <li class="modal-item">
                 <label class="modal-form-order" for="number-products">Количество:</label>
                 <button class="modal-info" type="button">i</button>
-                <div class="modal-info-navigation">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                <div class="modal-info-navigation">Постараемся найти, сколько нужно. Привезём сколько получится по
+                  требованиям
                   к провозу багажа.</div>
                 <div class="container-input-number">
                   <button class="modal-button" type="button">-</button>
@@ -479,7 +486,8 @@
                 </div>
               </li>
             </ul>
-            <button class="button-send decoration-link" type="submit"><span class="button-send-text">Отправить</span></button>
+            <button class="button-send decoration-link" type="submit"><span
+                class="button-send-text">Отправить</span></button>
           </form>
         </div>
       </div>
