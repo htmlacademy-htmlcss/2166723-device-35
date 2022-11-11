@@ -69,8 +69,8 @@ button {
   font-size: 16px;
   line-height: 20px;
   padding-left: 48px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   width: 359px;
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@ button {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  padding: 10px 56px;
+  padding: 8px 56px;
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
   position: absolute;
@@ -139,6 +139,7 @@ button {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .button-catalog-products {
@@ -150,13 +151,11 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 293px;
   background-color: transparent;
   position: relative;
   padding: 0;
   height: min-content;
+  letter-spacing: 0.1em;
 }
 
 .navigation-catalog-products-link {
@@ -173,7 +172,9 @@ button {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
   margin-bottom: 29px;
+  letter-spacing: -0.06em;
 }
 
 .main-characteristic-product {
@@ -216,6 +217,8 @@ button {
 .characteristic-product-item {
   font-size: 16px;
   color: #444444;
+  padding: 0;
+  margin: 0;
 }
 
 .characteristic-product-item b {
@@ -265,7 +268,7 @@ button {
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   color: #000000;
   position: relative;
   display: flex;
@@ -346,6 +349,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  letter-spacing: 0.1em;
 }
 
 .delivery-products-image {
@@ -362,9 +366,28 @@ button {
   margin: 47px auto 48px 0;
 }
 
-.transport-companies-name {
+.transport-companies-item {
   font-weight: 700;
   font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  padding-left: 34px;
+  position: relative;
+}
+
+.transport-companies-item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.transport-companies-item::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffc700;
+  left: 0;
+  top: 6px;
 }
 
 .store-information,
@@ -424,7 +447,7 @@ button {
   border: 3px solid #C4C4C4;
   position: absolute;
   left: 557px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 
 .subscription-button:hover {
@@ -809,6 +832,7 @@ button {
 
 .navigation-services {
   display: flex;
+  justify-content: space-between;
   width: 1040px;
   margin: 0 auto;
   position: relative;
@@ -832,11 +856,12 @@ button {
 
 .navigation-services-list {
   display: flex;
+  margin: 0;
+  margin-top: 12px;
   justify-content: space-between;
-  width: 471px;
-  margin-left: 276px;
   list-style-type: none;
   padding: 0;
+  width: 470px;
 }
 
 .navigation-catalog-products {
@@ -849,12 +874,13 @@ button {
   z-index: 1;
   position: absolute;
   left: -60px;
-  top: 66px;
+  top: 60px;
   min-height: 180px;
 }
 
 .navigation-services-catalog {
   height: min-content;
+  padding-top: 15px;
 }
 
 .button-catalog-products:hover + nav {
@@ -878,23 +904,33 @@ button {
   margin: 0 auto;
   margin-bottom: 70px;
   position: relative;
-  background: linear-gradient(to bottom, #ffe17f 0 150px, #ffffff 150px 100%);
+  background: linear-gradient(to bottom, #ffe17f 0 140px, #ffffff 140px 100%);
 }
 
 .slide {
   display: flex;
   width: 1160px;
-  margin-left: 0;
+}
+
+.slide-image {
+  position: relative;
+  display: block;
+  width: 560px;
+  height: 560px;
 }
 
 .recommended-products-image {
   display: block;
   margin: 0;
+  position: absolute;
+  top: -10px;
+  left: 0;
 }
 
 .slide-info {
   width: 560px;
   margin-left: 40px;
+  margin-top: 110px;
 }
 
 .navigation-product-categories {
@@ -974,11 +1010,24 @@ button {
 .information-store {
   width: 520p;
   margin: 0 108px 52px 0;
+  position: relative;
+}
+
+.information-store::after,
+.contacts-store::after {
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .contacts-store {
   width: 532p;
   margin-left: 108px;
+  position: relative;
 }
 
 .subscription-header {
@@ -1111,6 +1160,7 @@ button {
   border: none;
   padding: 10px 5px;
   position: relative;
+  z-index: 1;
 }
 
 .filter-button::before {
@@ -1120,6 +1170,12 @@ button {
   height: 8px;
   background-color: #ffe17f;
   z-index: -1;
+  left: 0;
+  top: 16px;
+}
+
+.filter-button:active:before {
+  background-color: #ffc700;
 }
 
 .products-cards {
@@ -1200,13 +1256,17 @@ button {
 
 .catalog-products-button {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 243px;
+  bottom: -13px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   opacity: 0.3;
   border: 2px solid #000000;
+  z-index: 1;
 }
 
 .navigation-catalog-products-list {
@@ -1221,7 +1281,8 @@ button {
 .characteristic-product-list {
   list-style-type: none;
   padding: 0;
-  margin-right: 40px;
+  margin: 0;
+  margin-right: 20px;
 }
 
 .characteristic-product {
@@ -1299,6 +1360,7 @@ button {
 
 .transport-companies-list {
   padding: 0;
+  list-style-type: none;
 }
 
 .sorting-products-list {
@@ -1418,9 +1480,13 @@ button {
 }
 
 .controls-slides-button {
-  width: 530px;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  top: 42%;
+  left: 30px;
+  transform: translateY(-58%);
+  width: 530px;
 }
 
 .controls-slide-button {
@@ -1445,6 +1511,9 @@ button {
 }
 
 .controls-slides-number {
+  position: absolute;
+  left: 540px;
+  bottom: 10px;
   display: flex;
   justify-content: center;
   margin: 0;
@@ -1514,6 +1583,10 @@ button {
   outline: none;
 }
 
+.decoration-link {
+  letter-spacing: 0.1em;
+}
+
 .decoration-link:hover {
   background-color: #ffe17f;
 }
@@ -1553,13 +1626,6 @@ button {
 .footer-contacts-link:focus {
   box-shadow: inset 0 0 0 2px #af4fff;
   outline: none;
-}
-
-.controls-slides-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 560px;
 }
 
 .range-scale {
@@ -2027,7 +2093,7 @@ button {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: transparent;
   position: relative;
