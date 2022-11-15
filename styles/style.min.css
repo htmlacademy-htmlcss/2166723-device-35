@@ -56,6 +56,12 @@ button {
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .page-header {
   background: -o-linear-gradient(top,
   #ffffff 0 20px,
@@ -114,11 +120,17 @@ button {
 .search-button:hover {
   color: #ffffff;
   background-color: #000000;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .search-button:active {
   color: #c4c4c4;
   background-color: #000000;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .search-button:focus {
@@ -233,6 +245,9 @@ button {
 
 .detailed-characteristic-product:active::before {
   background-color: #ffc700;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .characteristic-product-item {
@@ -266,10 +281,16 @@ button {
 
 .product-categories-link:hover .product-categories-image {
   background-color: #ffc700;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .product-categories-link:active {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .product-categories-link:focus {
@@ -332,6 +353,38 @@ button {
           align-items: center;
 }
 
+.services-link:hover,
+.services-link:active {
+  width: 280px;
+  background-color: #000000;
+  color:#ffe17f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.services-link:hover::before,
+.services-link:active::before,
+.services-link:focus::before {
+  display: none;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.services-link:focus {
+  outline: #af4fff 2px solid;
+  width: 280px;
+  background-color: #000000;
+  color:#ffe17f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .services-title {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -374,14 +427,23 @@ button {
 
 .navigation-delivery-products:hover .delivery-products-image {
   background-color: #ffc700;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .navigation-delivery-products:hover .delivery-info-icon {
   color: #000000;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .navigation-delivery-products:active {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .navigation-delivery-products:focus {
@@ -519,12 +581,18 @@ button {
   background-color: #000000;
   border: 3px solid #000000;
   color: #ffffff;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .subscription-button:active {
   background-color: #000000;
   border: 3px solid #000000;
   color: #c4c4c4;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .subscription-button:focus {
@@ -586,12 +654,18 @@ button {
 .footer-navigation-link:hover {
   color: #ffc700;
   text-decoration: underline;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .footer-navigation-link:active {
   color: #ffc700;
   text-decoration: underline;
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .footer-navigation-link:focus {
@@ -616,11 +690,17 @@ button {
 
 .footer-contacts-phone:hover {
   color: #ffc700;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .footer-contacts-phone:active {
   color: #ffc700;
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .footer-contacts-phone:focus {
@@ -638,11 +718,17 @@ button {
 
 .html-academy-logo-link:hover svg {
   fill: #ffffff;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .html-academy-logo-link:active svg {
   fill: #ffffff;
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .html-academy-logo-link:focus {
@@ -683,11 +769,17 @@ button {
 .pagination-button[href]:hover {
   background-color: #dcdcdc;
   color: #000000;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .pagination-button[href]:active {
   background-color: #dcdcdc;
   color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .pagination-button[href]:focus {
@@ -739,15 +831,24 @@ button {
 .product-card-link:hover img,
 .product-card-link:hover .products-cards-title {
   opacity: 0.6;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .product-card-link:active img {
   opacity: 0.6;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .product-card-link:active .products-cards-title,
 .product-card-link:active .products-cards-price {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .product-card-link:focus {
@@ -763,6 +864,7 @@ button {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  background-color: transparent;
   position: absolute;
   top: 170px;
   left: 70px;
@@ -782,6 +884,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .product-card-link:active .products-card-more::before {
@@ -789,6 +894,9 @@ button {
   display: -ms-flexbox;
   display: flex;
   background-color: #ffc700;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .products-card-more::before {
@@ -802,6 +910,9 @@ button {
 
 .products-card-more:active::before {
   background-color: #ffc700;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .new-product::before {
@@ -845,7 +956,24 @@ button {
   margin: 0 auto;
 }
 
-.pagination-link,
+.pagination-link {
+  color: rgba(4, 4, 4, 0.6);
+  font-size: 16px;
+  line-height: 20px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination-link[href],
 .pagination-ellipsis {
   font-weight: 400;
   font-size: 16px;
@@ -868,10 +996,16 @@ button {
 
 .pagination-link:hover {
   color: #444444;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .pagination-link:active {
   color: rgba(4, 4, 4, 0.1);
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .pagination-link:focus {
@@ -988,6 +1122,9 @@ button {
 .button-catalog-products:hover span,
 .button-catalog-products:active span {
   opacity: 1;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .button-catalog-products:focus {
@@ -1042,12 +1179,18 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .button-catalog-products:active + nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .button-catalog-products:focus + nav {
@@ -1421,6 +1564,9 @@ button {
 
 .filter-button:active::before {
   background-color: #ffc700;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .products-cards {
@@ -1471,11 +1617,17 @@ button {
 
 .show-more-products-link:hover {
   border: 3px solid #000000;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .show-more-products-link:active {
   opacity: 0.3;
   border: 3px solid #000000;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .show-more-products-link:focus {
@@ -1540,6 +1692,7 @@ button {
   opacity: 0.3;
   border: 2px solid #000000;
   z-index: 1;
+  padding-left: 3px;
 }
 
 .navigation-catalog-products-list {
@@ -1701,10 +1854,16 @@ button {
 
 .sorting-products-link:hover svg {
   opacity: 0.5;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .sorting-products-link:active svg {
   opacity: 1;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .sorting-products-link:focus {
@@ -1831,10 +1990,16 @@ button {
 
 .controls-slide-button:hover {
   opacity: 0.6;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .controls-slide-button:active {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .controls-slide-button:focus {
@@ -1872,11 +2037,17 @@ button {
 .activated-slide-number:hover,
 .slide-number:hover {
   opacity: 0.6;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .activated-slide-number:active,
 .slide-number:active {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .activated-slide-number:focus,
@@ -1898,10 +2069,16 @@ button {
 
 .page-logo:hover {
   opacity: 0.6;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .page-logo:active {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .page-logo:focus {
@@ -1912,10 +2089,16 @@ button {
 
 .breadcrumbs-link[href]:hover {
   opacity: 0.6;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .breadcrumbs-link[href]:active {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .breadcrumbs-link[href]:focus {
@@ -1930,10 +2113,16 @@ button {
 
 .decoration-link:hover {
   background-color: #ffe17f;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .decoration-link:active {
   background-color: #ffcc33;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .decoration-link:focus {
@@ -1942,10 +2131,16 @@ button {
 
 .decoration-header-link:hover {
   opacity: 0.6;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .decoration-header-link:active {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .decoration-header-link:focus {
@@ -1957,12 +2152,18 @@ button {
 .footer-contacts-link:hover img {
   background-color: #ffc700;
   border-radius: 50%;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .footer-contacts-link:active img {
   background-color: #ffc700;
   border-radius: 50%;
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .footer-contacts-link:focus {
@@ -1995,10 +2196,16 @@ button {
 
 .range-toggle:hover {
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .range-toggle:active {
   background-color: #000000;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .range-toggle:focus {
@@ -2058,10 +2265,16 @@ button {
 
 .control:hover {
   opacity: 0.6;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .control:active {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .control-mark {
@@ -2171,11 +2384,17 @@ button {
 .popover-link:hover,
 .product-delete:hover {
   opacity: 0.6;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .popover-link:active,
 .product-delete:active {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .popover-link:focus,
@@ -2233,11 +2452,17 @@ button {
 
 .open-basket-button:hover {
   background-color: #ffe17f;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .open-basket-button:active {
   background-color: #ffe17f;
   color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .open-basket-button:focus {
@@ -2300,10 +2525,16 @@ button {
 
 .modal-exit:hover {
   opacity: 0.6;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .modal-exit:active {
   opacity: 0.3;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .modal-exit:focus {
@@ -2350,6 +2581,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .modal-info-navigation {
@@ -2425,6 +2659,9 @@ button {
 
 .modal-form-input:hover {
   background-color: #dcdcdc;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .modal-form-input:focus {
@@ -2512,6 +2749,9 @@ button {
 
 .button-send:active .button-send-text::before {
   background-color: #ffcc33;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .bascket::after {
