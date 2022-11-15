@@ -109,11 +109,13 @@ img {
 .search-button:hover {
   color: #ffffff;
   background-color: #000000;
+  transition: 300ms ease-out;
 }
 
 .search-button:active {
   color: #c4c4c4;
   background-color: #000000;
+  transition: 300ms ease-out;
 }
 
 .search-button:focus {
@@ -217,6 +219,7 @@ img {
 
 .detailed-characteristic-product:active::before {
   background-color: #ffc700;
+  transition: 300ms ease-out;
 }
 
 .characteristic-product-item {
@@ -246,10 +249,12 @@ img {
 
 .product-categories-link:hover .product-categories-image {
   background-color: #ffc700;
+  transition: 300ms ease-out;
 }
 
 .product-categories-link:active {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .product-categories-link:focus {
@@ -295,6 +300,30 @@ img {
   align-items: center;
 }
 
+.services-link:hover,
+.services-link:active {
+  width: 280px;
+  background-color: #000000;
+  color:#ffe17f;
+  display: flex;
+  transition: 300ms ease-out;
+}
+
+.services-link:hover::before,
+.services-link:active::before,
+.services-link:focus::before {
+  display: none;
+  transition: 300ms ease-out;
+}
+
+.services-link:focus {
+  outline: #af4fff 2px solid;
+  width: 280px;
+  background-color: #000000;
+  color:#ffe17f;
+  display: flex;
+}
+
 .services-title {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -335,14 +364,17 @@ img {
 
 .navigation-delivery-products:hover .delivery-products-image {
   background-color: #ffc700;
+  transition: 300ms ease-out;
 }
 
 .navigation-delivery-products:hover .delivery-info-icon {
   color: #000000;
+  transition: 300ms ease-out;
 }
 
 .navigation-delivery-products:active {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .navigation-delivery-products:focus {
@@ -462,12 +494,14 @@ img {
   background-color: #000000;
   border: 3px solid #000000;
   color: #ffffff;
+  transition: 300ms ease-out;
 }
 
 .subscription-button:active {
   background-color: #000000;
   border: 3px solid #000000;
   color: #c4c4c4;
+  transition: 300ms ease-out;
 }
 
 .subscription-button:focus {
@@ -526,12 +560,14 @@ img {
 .footer-navigation-link:hover {
   color: #ffc700;
   text-decoration: underline;
+  transition: 300ms ease-out;
 }
 
 .footer-navigation-link:active {
   color: #ffc700;
   text-decoration: underline;
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .footer-navigation-link:focus {
@@ -555,11 +591,13 @@ img {
 
 .footer-contacts-phone:hover {
   color: #ffc700;
+  transition: 300ms ease-out;
 }
 
 .footer-contacts-phone:active {
   color: #ffc700;
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .footer-contacts-phone:focus {
@@ -576,11 +614,13 @@ img {
 
 .html-academy-logo-link:hover svg {
   fill: #ffffff;
+  transition: 300ms ease-out;
 }
 
 .html-academy-logo-link:active svg {
   fill: #ffffff;
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .html-academy-logo-link:focus {
@@ -620,11 +660,13 @@ img {
 .pagination-button[href]:hover {
   background-color: #dcdcdc;
   color: #000000;
+  transition: 300ms ease-out;
 }
 
 .pagination-button[href]:active {
   background-color: #dcdcdc;
   color: rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-out;
 }
 
 .pagination-button[href]:focus {
@@ -676,15 +718,18 @@ img {
 .product-card-link:hover img,
 .product-card-link:hover .products-cards-title {
   opacity: 0.6;
+  transition: 300ms ease-out;
 }
 
 .product-card-link:active img {
   opacity: 0.6;
+  transition: 300ms ease-out;
 }
 
 .product-card-link:active .products-cards-title,
 .product-card-link:active .products-cards-price {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .product-card-link:focus {
@@ -699,6 +744,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  background-color: transparent;
   position: absolute;
   top: 170px;
   left: 70px;
@@ -712,11 +758,13 @@ img {
 
 .product-card-link:hover .products-card-more {
   display: flex;
+  transition: 300ms ease-out;
 }
 
 .product-card-link:active .products-card-more::before {
   display: flex;
   background-color: #ffc700;
+  transition: 300ms ease-out;
 }
 
 .products-card-more::before {
@@ -730,6 +778,7 @@ img {
 
 .products-card-more:active::before {
   background-color: #ffc700;
+  transition: 300ms ease-out;
 }
 
 .new-product::before {
@@ -773,7 +822,18 @@ img {
   margin: 0 auto;
 }
 
-.pagination-link,
+.pagination-link {
+  color: rgba(4, 4, 4, 0.6);
+  font-size: 16px;
+  line-height: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-link[href],
 .pagination-ellipsis {
   font-weight: 400;
   font-size: 16px;
@@ -790,10 +850,12 @@ img {
 
 .pagination-link:hover {
   color: #444444;
+  transition: 300ms ease-out;
 }
 
 .pagination-link:active {
   color: rgba(4, 4, 4, 0.1);
+  transition: 300ms ease-out;
 }
 
 .pagination-link:focus {
@@ -881,6 +943,7 @@ img {
 .button-catalog-products:hover span,
 .button-catalog-products:active span {
   opacity: 1;
+  transition: 300ms ease-out;
 }
 
 .button-catalog-products:focus {
@@ -925,10 +988,12 @@ img {
 
 .button-catalog-products:hover + nav {
   display: flex;
+  transition: 300ms ease-out;
 }
 
 .button-catalog-products:active + nav {
   display: flex;
+  transition: 300ms ease-out;
 }
 
 .button-catalog-products:focus + nav {
@@ -1257,6 +1322,7 @@ img {
 
 .filter-button:active::before {
   background-color: #ffc700;
+  transition: 300ms ease-out;
 }
 
 .products-cards {
@@ -1297,11 +1363,13 @@ img {
 
 .show-more-products-link:hover {
   border: 3px solid #000000;
+  transition: 300ms ease-out;
 }
 
 .show-more-products-link:active {
   opacity: 0.3;
   border: 3px solid #000000;
+  transition: 300ms ease-out;
 }
 
 .show-more-products-link:focus {
@@ -1350,6 +1418,7 @@ img {
   opacity: 0.3;
   border: 2px solid #000000;
   z-index: 1;
+  padding-left: 3px;
 }
 
 .navigation-catalog-products-list {
@@ -1480,10 +1549,12 @@ img {
 
 .sorting-products-link:hover svg {
   opacity: 0.5;
+  transition: 300ms ease-out;
 }
 
 .sorting-products-link:active svg {
   opacity: 1;
+  transition: 300ms ease-out;
 }
 
 .sorting-products-link:focus {
@@ -1589,10 +1660,12 @@ img {
 
 .controls-slide-button:hover {
   opacity: 0.6;
+  transition: 300ms ease-out;
 }
 
 .controls-slide-button:active {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .controls-slide-button:focus {
@@ -1624,11 +1697,13 @@ img {
 .activated-slide-number:hover,
 .slide-number:hover {
   opacity: 0.6;
+  transition: 300ms ease-out;
 }
 
 .activated-slide-number:active,
 .slide-number:active {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .activated-slide-number:focus,
@@ -1649,10 +1724,12 @@ img {
 
 .page-logo:hover {
   opacity: 0.6;
+  transition: 300ms ease-out;
 }
 
 .page-logo:active {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .page-logo:focus {
@@ -1662,10 +1739,12 @@ img {
 
 .breadcrumbs-link[href]:hover {
   opacity: 0.6;
+  transition: 300ms ease-out;
 }
 
 .breadcrumbs-link[href]:active {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .breadcrumbs-link[href]:focus {
@@ -1679,10 +1758,12 @@ img {
 
 .decoration-link:hover {
   background-color: #ffe17f;
+  transition: 300ms ease-out;
 }
 
 .decoration-link:active {
   background-color: #ffcc33;
+  transition: 300ms ease-out;
 }
 
 .decoration-link:focus {
@@ -1691,10 +1772,12 @@ img {
 
 .decoration-header-link:hover {
   opacity: 0.6;
+  transition: 300ms ease-out;
 }
 
 .decoration-header-link:active {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .decoration-header-link:focus {
@@ -1705,12 +1788,14 @@ img {
 .footer-contacts-link:hover img {
   background-color: #ffc700;
   border-radius: 50%;
+  transition: 300ms ease-out;
 }
 
 .footer-contacts-link:active img {
   background-color: #ffc700;
   border-radius: 50%;
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .footer-contacts-link:focus {
@@ -1742,10 +1827,12 @@ img {
 
 .range-toggle:hover {
   background-color: rgba(0, 0, 0, 0.5);
+  transition: 300ms ease-out;
 }
 
 .range-toggle:active {
   background-color: #000000;
+  transition: 300ms ease-out;
 }
 
 .range-toggle:focus {
@@ -1796,10 +1883,12 @@ img {
 
 .control:hover {
   opacity: 0.6;
+  transition: 300ms ease-out;
 }
 
 .control:active {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .control-mark {
@@ -1903,11 +1992,13 @@ img {
 .popover-link:hover,
 .product-delete:hover {
   opacity: 0.6;
+  transition: 300ms ease-out;
 }
 
 .popover-link:active,
 .product-delete:active {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .popover-link:focus,
@@ -1961,11 +2052,13 @@ img {
 
 .open-basket-button:hover {
   background-color: #ffe17f;
+  transition: 300ms ease-out;
 }
 
 .open-basket-button:active {
   background-color: #ffe17f;
   color: rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-out;
 }
 
 .open-basket-button:focus {
@@ -2025,10 +2118,12 @@ img {
 
 .modal-exit:hover {
   opacity: 0.6;
+  transition: 300ms ease-out;
 }
 
 .modal-exit:active {
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .modal-exit:focus {
@@ -2063,6 +2158,7 @@ img {
 
 .modal-info:hover + .modal-info-navigation {
   display: flex;
+  transition: 300ms ease-out;
 }
 
 .modal-info-navigation {
@@ -2121,6 +2217,7 @@ img {
 
 .modal-form-input:hover {
   background-color: #dcdcdc;
+  transition: 300ms ease-out;
 }
 
 .modal-form-input:focus {
@@ -2204,6 +2301,7 @@ img {
 
 .button-send:active .button-send-text::before {
   background-color: #ffcc33;
+  transition: 300ms ease-out;
 }
 
 .bascket::after {
