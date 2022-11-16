@@ -44,15 +44,15 @@ body {
   background-color: #ffffff;
 }
 
-button {
-  display: inline-block;
-  border: none;
-  cursor: pointer;
-}
-
 img {
   max-width: 100%;
   object-fit: contain;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
 }
 
 .page-header {
@@ -223,6 +223,8 @@ img {
 }
 
 .characteristic-product-item {
+  display: block;
+  max-width: 200px;
   font-size: 16px;
   color: #444444;
   padding: 0;
@@ -230,6 +232,8 @@ img {
 }
 
 .characteristic-product-item b {
+  display: block;
+  max-width: 200px;
   font-size: 36px;
   color: #000000;
 }
@@ -946,7 +950,7 @@ img {
   transition: 300ms ease-out;
 }
 
-.button-catalog-products:focus {
+.button-catalog-products:focus-within {
   box-shadow: inset 0 0 0 2px #af4fff;
   outline: none;
 }
@@ -1134,6 +1138,7 @@ img {
 .information-store {
   margin: 0 40px 52px 0;
   position: relative;
+  max-width: 480px;
 }
 
 .information-store::after,
@@ -1150,6 +1155,7 @@ img {
 .contacts-store {
   margin-left: 108px;
   position: relative;
+  max-width: 535px;
 }
 
 .subscription-header {
@@ -1435,6 +1441,7 @@ img {
   padding: 0;
   margin: 0;
   margin-right: 20px;
+  margin-bottom: 30px;
 }
 
 .characteristic-product {
@@ -1675,6 +1682,7 @@ img {
 
 .controls-slides-number {
   position: absolute;
+  margin-top: 20px;
   left: 540px;
   bottom: 10px;
   display: flex;
@@ -1682,6 +1690,7 @@ img {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  z-index: 2;
 }
 
 .slide-number {
@@ -1904,6 +1913,10 @@ img {
   left: -36px;
   top: 0;
   border-radius: 3px;
+}
+
+.control-input:focus + .control-mark::after {
+  outline: #af4fff 2px solid;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
